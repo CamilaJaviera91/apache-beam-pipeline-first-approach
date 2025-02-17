@@ -48,3 +48,36 @@ print(beam.__version__)
 ```
 pip install pandas
 ```
+
+### Install scikit-learn and call a Dataset
+
+1. Install Using pip:
+
+```
+pip install scikit-learn
+```
+
+2. Verify Installation
+
+```
+import sklearn
+
+print(sklearn.__version__)
+```
+
+3. Call a dataset to work with it.
+
+```
+from sklearn.datasets import load_linnerud
+```
+
+4. Transform it into a DataFrame.
+
+```
+from sklearn.datasets import load_linnerud
+
+dt = dataset()
+df = pd.DataFrame(dt.data, columns=dt.feature_names)
+
+print(df)
+```
