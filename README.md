@@ -91,3 +91,40 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 print(df)
 ```
+
+---
+
+## 💻 pipeline.py
+
+### 👨‍💻 Explanation of the Code:
+
+1️⃣ **Import Libraries:** <br>
+
+- **apache_beam:** Used for building and running data processing pipelines.
+- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.    
+- **pandas:** A powerful data manipulation library for handling structured data.
+
+2️⃣ **Load and Prepare Data:** <br>
+
+- The Linnerud dataset is loaded and converted into a Pandas DataFrame for easier manipulation.
+
+3️⃣ **Define the Pipeline:** <br>
+
+- A function run_pipeline is defined to encapsulate the pipeline logic.
+- Within this function, a pipeline is created using the with statement, ensuring proper resource management.
+
+4️⃣ **Create PCollection:** <br>
+
+- The 'Chins' column from the DataFrame is converted to a list and then to a PCollection using beam.Create.
+
+5️⃣ **Apply Transformation:** <br>
+
+- A transformation is applied to the **PCollection** to check if each value is greater than 10. This is done using **beam.Map** with a **lambda** function.
+
+6️⃣ **Output Results:** <br>
+
+The results are printed to the console using **beam.Map(print)**.
+
+7️⃣ **Execute the Pipeline:** <br>
+
+- The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
