@@ -51,6 +51,14 @@ print(beam.__version__)
 pip install pandas
 ```
 
+2️⃣ Verify Installation: <br>
+
+```
+import pandas as pd
+
+print(pd.__version__)
+``
+
 ### Install scikit-learn and call a Dataset
 
 1️⃣ Install Using pip: <br>
