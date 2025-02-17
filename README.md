@@ -12,7 +12,7 @@
 ✅ Works well with **Google Cloud Dataflow**, **Apache Flink**, and **Apache Spark**. <br>
 ✅ Supports **Python**, **Java**, and **Go** for pipeline development.
 
-### How to Install Apache Beam in Python
+### Install Apache Beam in Python
 
 - To install Apache Beam in Python, follow these steps:
 
@@ -35,4 +35,16 @@ pip install apache-beam[gcp]
 import apache_beam as beam
 
 print(beam.__version__)
+```
+
+## What's a DataFrame
+
+✅ A **DataFrame** is a tabular structure for handling structured data in **Python**.<br>
+✅ It is part of the **pandas library** and supports fast **data manipulation**.<br>
+✅ It is widely used in **data science**, **analytics**, and **machine learning**.
+
+### Install pandas
+
+```
+pip install pandas
 ```
