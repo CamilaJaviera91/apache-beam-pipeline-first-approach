@@ -16,20 +16,20 @@
 
 - To install Apache Beam in Python, follow these steps:
 
-1. Install the Basic Apache Beam Package
+1️⃣ Install Using pip:
 
 ```
 pip install apache-beam
 ```
 
-2. _Install Apache Beam with Google Cloud Support (Optional)_
+2️⃣ _Install Apache Beam with Google Cloud Support (Optional)_: <br>
     - _This includes additional dependencies for Google Cloud Storage, Pub/Sub, and BigQuery_
 
 ```
 pip install apache-beam[gcp]
 ```
 
-3. Verify Installation
+3️⃣ Verify Installation:
 
 ```
 import apache_beam as beam
@@ -45,19 +45,21 @@ print(beam.__version__)
 
 ### Install pandas
 
+1️⃣ Install Using pip:
+
 ```
 pip install pandas
 ```
 
 ### Install scikit-learn and call a Dataset
 
-1. Install Using pip:
+1️⃣ Install Using pip: <br>
 
 ```
 pip install scikit-learn
 ```
 
-2. Verify Installation
+2️⃣ Verify Installation: <br>
 
 ```
 import sklearn
@@ -65,13 +67,13 @@ import sklearn
 print(sklearn.__version__)
 ```
 
-3. Call a dataset to work with it.
+3️⃣ Call a dataset to work with it: <br>
 
 ```
 from sklearn.datasets import load_linnerud
 ```
 
-4. Transform it into a DataFrame.
+4️⃣ Transform it into a DataFrame: <br>
 
 ```
 from sklearn.datasets import load_linnerud
