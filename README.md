@@ -7,10 +7,7 @@
 
 ## What's Apache-Beam?
 
-**Apache Beam** is an open-source framework for building batch and streaming data processing pipelines.
-<br> <br>
-✅ **Unified Model** → Write a single pipeline for both batch and streaming data.<br>
-✅ **Portable** → Works with multiple processing engines (Spark, Flink, Dataflow).<br>
-✅ **Scalable** → Handles large-scale data efficiently.<br>
-✅ **Flexible APIs** → Supports Python, Java, Go, and SQL.<br>
-✅ **Event-time Processing** → Supports late-arriving data and windowing.
+✅  **Apache Beam** is a framework for **batch** and **streaming data processing**.
+✅  It provides a **unified API** that can run on multiple execution engines.
+✅  Works well with **Google Cloud Dataflow**, **Apache Flink**, and **Apache Spark**.
+✅  Supports **Python**, **Java**, and **Go** for pipeline development.
