@@ -1,11 +1,11 @@
 # 🚀 Pipelines (First Approach)
 
-## What's a pipeline?
+## ➰ What's a pipeline?
 
 ✅ Sequence of **data** processing **steps**, where the **output** of one step becomes the **input** for the next. <br>
 ✅ Commonly used in **data engineering**, **machine learning**, and **software development** to automate **workflows** and ensure efficient processing.
 
-## What's Apache-Beam?
+## 🅱️ What's Apache-Beam?
 
 ✅ **Apache Beam** is a framework for **batch** and **streaming data processing**. <br>
 ✅ It provides a **unified API** that can run on multiple execution engines. <br>
@@ -37,7 +37,7 @@ import apache_beam as beam
 print(beam.__version__)
 ```
 
-## What's a DataFrame
+## 📄 What's a DataFrame
 
 ✅ A **DataFrame** is a tabular structure for handling structured data in **Python**.<br>
 ✅ It is part of the **pandas library** and supports fast **data manipulation**.<br>
