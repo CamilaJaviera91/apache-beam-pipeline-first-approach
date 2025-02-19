@@ -119,7 +119,7 @@ print(df)
 
 5️⃣ **Apply Transformation:** <br>
 
-- A transformation is applied to the **PCollection** to check if each value is greater than 10. This is done using **beam.Map** with a **lambda** function.
+- The **PCollection** undergoes a transformation where each value is checked to determine if it exceeds 10. This is implemented using **beam.Map** with a **lambda** function for efficiency.
 
 6️⃣ **Output Results:** <br>
 
