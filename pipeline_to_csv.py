@@ -5,8 +5,8 @@ import pandas as pd
 import os
 import glob
 
-# Get the Downloads folder dynamically
-downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads")
+# Get the current working directory (same folder as the script)
+folder = os.getcwd()
 
 # Load the Linnerud dataset
 dt = dataset()
@@ -16,7 +16,7 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 # Define the function to run the Apache Beam pipeline
 def run_pipeline():
-    output_path = os.path.join(downloads_folder, "chins_filtered")  # Path without extension
+    output_path = os.path.join(folder, "chins_filtered")  # Path without extension
 
     # Create a pipeline using the DirectRunner (runs locally)
     with beam.Pipeline() as pipeline:
@@ -34,7 +34,7 @@ def run_pipeline():
             | 'Format to CSV' >> beam.Map(lambda x: f"{x['Chins']}")
         )
 
-        # Write the output to the Downloads folder
+        # Write the output to the current working folder
         output_data | 'Write to CSV' >> beam.io.WriteToText(output_path, file_name_suffix='.csv', header='Chins')
 
 # Run the pipeline
@@ -42,9 +42,9 @@ if __name__ == '__main__':
     run_pipeline()
 
     # Find the generated CSV file and rename it
-    generated_files = glob.glob(os.path.join(downloads_folder, "chins_filtered-*.csv"))
+    generated_files = glob.glob(os.path.join(folder, "chins_filtered-*.csv"))
     if generated_files:
-        final_path = os.path.join(downloads_folder, "chins_filtered.csv")
+        final_path = os.path.join(folder, "chins_filtered.csv")
         os.rename(generated_files[0], final_path)  # Rename the file
         print(f"File saved to: {final_path}")
     else:
