@@ -8,6 +8,10 @@ import glob
 # Get the current working directory (same folder as the script)
 folder = os.getcwd()
 
+# Create a new subfolder inside the current working directory
+download = "download"
+download = os.path.join(folder, download)
+
 # Load the Linnerud dataset
 dt = dataset()
 
@@ -16,7 +20,7 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 # Define the function to run the Apache Beam pipeline
 def run_pipeline():
-    output_path = os.path.join(folder, "chins_filtered")  # Path without extension
+    output_path = os.path.join(download, "chins_filtered")  # Path without extension
 
     # Create a pipeline using the DirectRunner (runs locally)
     with beam.Pipeline() as pipeline:
@@ -42,9 +46,9 @@ if __name__ == '__main__':
     run_pipeline()
 
     # Find the generated CSV file and rename it
-    generated_files = glob.glob(os.path.join(folder, "chins_filtered-*.csv"))
+    generated_files = glob.glob(os.path.join(download, "chins_filtered-*.csv"))
     if generated_files:
-        final_path = os.path.join(folder, "chins_filtered.csv")
+        final_path = os.path.join(download, "chins_filtered.csv")
         os.rename(generated_files[0], final_path)  # Rename the file
         print(f"File saved to: {final_path}")
     else:
