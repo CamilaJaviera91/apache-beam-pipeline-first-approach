@@ -86,7 +86,7 @@ from sklearn.datasets import load_linnerud
 ```
 from sklearn.datasets import load_linnerud
 
-dt = load_linnerud()  # Fix: Correct function call
+dt = load_linnerud()  
 df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 print(df)
