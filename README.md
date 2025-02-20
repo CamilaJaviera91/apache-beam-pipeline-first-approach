@@ -144,8 +144,20 @@ The results are printed to the console using **beam.Map(print)**.
 - The download folder will be created inside this directory to store processed files.
 
 3️⃣ **Load and Prepare Data:** <br>
-- The Linnerud dataset is loaded and converted into a Pandas DataFrame for easier manipulation.
-4️⃣ **
+- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
+
+4️⃣ **Apache Beam Pipeline:** <br>
+- **Pipeline Breakdown**
+    1. **beam.Pipeline():** Initializes an Apache Beam pipeline.
+    2. **beam.Create(df[['Chins']].to_dict(orient='records')):** 
+        - Extracts the "Chins" column from the DataFrame.
+        - Converts it into a PCollection (a distributed dataset in Apache Beam).
+    3. **beam.Filter(lambda x: x['Chins'] > 10):**
+        - Filters out all rows where "Chins" ≤ 10.
+    4. **beam.Map(lambda x: f"{x['Chins']}"):**
+        - Formats the filtered values into a string format suitable for writing to a CSV file.
+    5. **beam.io.WriteToText(output_path, file_name_suffix='.csv', header='Chins'):**
+        - Writes the output into a CSV file with a header.
 5️⃣ **
 6️⃣ **
 7️⃣ **
