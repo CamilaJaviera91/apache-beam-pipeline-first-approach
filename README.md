@@ -140,7 +140,7 @@ The results are printed to the console using **beam.Map(print)**.
 - **OS & Glob:** Used for file and directory management.
 
 2️⃣ **Setting Up File PathsSetting Up File Paths:**
-- os.getcwd() fetches the current working directory.
+- **os.getcwd()** fetches the current working directory.
 - The download folder will be created inside this directory to store processed files.
 
 3️⃣ **
