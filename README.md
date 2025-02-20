@@ -128,3 +128,23 @@ The results are printed to the console using **beam.Map(print)**.
 7️⃣ **Execute the Pipeline:** <br>
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
+
+## 💻 pipeline_to_csv.py
+
+### 👨‍💻 Explanation of the Code:
+
+1️⃣ **Importing Libraries:** <br>
+- **Apache Beam:** Used for building and running data processing pipelines.
+- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
+- **Pandas:** A powerful data manipulation library for handling structured data.
+- **OS & Glob:** Used for file and directory management.
+
+2️⃣ **Setting Up File PathsSetting Up File Paths:**
+- os.getcwd() fetches the current working directory.
+- The download folder will be created inside this directory to store processed files.
+
+3️⃣ **
+4️⃣ **
+5️⃣ **
+6️⃣ **
+7️⃣ **
