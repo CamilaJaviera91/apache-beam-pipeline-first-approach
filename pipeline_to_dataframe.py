@@ -46,7 +46,7 @@ if __name__ == '__main__':
     # Rename the generated CSV file (optional step)
     generated_files = glob.glob(os.path.join(download_folder, "chins_filtered-*.csv"))
     if generated_files:
-        final_path = os.path.join(download_folder, "chins_filtered_dataframe.csv")
+        final_path = os.path.join(download_folder, "chins_filtered_2.csv")
         os.rename(generated_files[0], final_path)
         print(f"File saved to: {final_path}")
     else:
