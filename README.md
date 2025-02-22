@@ -200,3 +200,13 @@ The results are printed to the console using **beam.Map(print)**.
 3️⃣ **Load and Prepare Data:** <br>
 
 - The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
+
+3️⃣ **Loading and Transforming the Dataset** <br>
+
+- Loads the **Linnerud dataset**, which contains exercise-related data with three features:
+    - "Chins" (pull-ups)
+    - "Situps" (sit-ups)
+    - "Jumps" (jumps)
+- Converts the **dataset** into a **Pandas DataFrame**.
+- Transforms it into a **list of dictionaries** (data_list) to be used with **Apache Beam**.
+
