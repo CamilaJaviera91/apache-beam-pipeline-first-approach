@@ -96,6 +96,8 @@ print(df)
 
 ---
 
+# 🛠 Code Explanation 
+
 ## 💻 pipeline.py
 
 ### 👨‍💻 Explanation of the Code:
