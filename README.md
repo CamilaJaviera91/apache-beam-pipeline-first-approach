@@ -191,3 +191,12 @@ The results are printed to the console using **beam.Map(print)**.
 - **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
 - **Pandas:** A powerful data manipulation library for handling structured data.
 - **OS & Glob:** Used for file and directory management.
+
+2️⃣ **Setting Up File PathsSetting Up File Paths:** <br>
+
+- **os.getcwd()** fetches the current working directory.
+- The download folder will be created inside this directory to store processed files.
+
+3️⃣ **Load and Prepare Data:** <br>
+
+- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
