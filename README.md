@@ -179,6 +179,27 @@ The results are printed to the console using **beam.Map(print)**.
 - Renames it to a standardized name chins_filtered.csv.
 - Prints confirmation or an error message.
 
+
+7️⃣ **Example Output:**
+
+- **Original Dataset**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+15     250     80
+```
+
+- **Output .csv (Chins > 10)**
+
+```
+Chins
+12
+15
+```
+
 ---
 
 ## pipeline_to_dataframa.py 💻
