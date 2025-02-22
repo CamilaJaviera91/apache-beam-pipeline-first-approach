@@ -12,7 +12,7 @@
 ✅ Works well with **Google Cloud Dataflow**, **Apache Flink**, and **Apache Spark**. <br>
 ✅ Supports **Python**, **Java**, and **Go** for pipeline development.
 
-# 👨‍💻 Prepare to program the code 
+# 👨‍💻 Preparing to code 
 
 ### Install Apache Beam in Python
 
