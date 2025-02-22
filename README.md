@@ -227,4 +227,24 @@ The results are printed to the console using **beam.Map(print)**.
 - Renames it to a standardized name chins_filtered_2.csv.
 - Prints confirmation or an error message.
 
+7️⃣ **Example Output:**
+
+- **Original Dataset**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+15     250     80
+```
+
+- **Output .csv (Chins > 10)**
+
+```
+Chins,Situps,Jumps
+12,101,101
+15,250,80
+```
+
 ---
