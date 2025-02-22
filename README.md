@@ -133,6 +133,29 @@ The results are printed to the console using **beam.Map(print)**.
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
 
+8️⃣ **Example Output:**
+
+- **Original Dataset**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+15     250     80
+```
+
+- **Output .csv (Chins > 10)**
+
+```
+Chins
+False
+False
+True
+True
+```
+
+
 ---
 
 ## 💻 pipeline_to_csv.py
