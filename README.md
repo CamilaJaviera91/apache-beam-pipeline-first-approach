@@ -210,3 +210,11 @@ The results are printed to the console using **beam.Map(print)**.
 - Converts the **dataset** into a **Pandas DataFrame**.
 - Transforms it into a **list of dictionaries** (data_list) to be used with **Apache Beam**.
 
+4️⃣ **Defining the Apache Beam Pipeline**
+
+- **Defines the function run_pipeline(output_csv_path), which runs the Apache Beam pipeline:**
+    1. **beam.Create(data_list):** Converts the list of dictionaries into a PCollection (Apache Beam's data structure).
+    2. **beam.Filter(lambda row:** row["Chins"] > 10): Filters rows where "Chins" is greater than 10.
+    3. **beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', header="Chins,Situps,Jumps"):** Saves the filtered data as a CSV file.
+
+
