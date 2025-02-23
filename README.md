@@ -102,8 +102,9 @@ print(df)
 
 ### 👨‍💻 Explanation of the Code:
 
-- This code will check if the 'Chins' field meets the condition:
-    - If 'Chins' is greater than 10.
+- This **code** will check if the **'Chins'** field meets the condition:
+    - If **'Chins'** is **greater than 10**.
+    - It will only display **'True'** or **'False'** if **'Chins'** meets the previous condition."
 
 ### 👣 Steps
 
@@ -167,9 +168,9 @@ True
 
 ### 👨‍💻 Explanation of the Code:
 
-- This code will check if the 'Chins' field meets the condition:
-    - If 'Chins' is greater than 10.
-    - Only the 'Chins' field will be displayed, along with whether it meets the previous condition.
+- This **code** will check if the **'Chins'** field meets the condition:
+    - If **'Chins'** is **greater than 10**.
+    - Only the **'Chins'** field will be displayed, along with whether it meets the previous condition.
 
 ### 👣 Steps
 
