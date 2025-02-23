@@ -292,3 +292,35 @@ Chins,Situps,Jumps
 ```
 
 ---
+
+
+## pipeline_to_dataframa.py 💻
+
+### 👨‍💻 Explanation of the Code:
+
+1️⃣ **Importing Libraries:** <br>
+
+- **Apache Beam:** Used for building and running data processing pipelines.
+- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
+- **Pandas:** A powerful data manipulation library for handling structured data.
+- **OS & Glob:** Used for file and directory management.
+
+2️⃣ **Setting Up File PathsSetting Up File Paths:** <br>
+
+- **os.getcwd()** fetches the current working directory.
+- The download folder will be created inside this directory to store processed files.
+
+3️⃣ **Load and Prepare Data:** <br>
+
+- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
+
+3️⃣ **Loading and Transforming the Dataset** <br>
+
+- Loads the **Linnerud dataset**, which contains exercise-related data with three features:
+    - "Chins" (pull-ups)
+    - "Situps" (sit-ups)
+    - "Jumps" (jumps)
+- Converts the **dataset** into a **Pandas DataFrame**.
+- Transforms it into a **list of dictionaries** (data_list) to be used with **Apache Beam**.
+
+4️⃣ **Defining the Apache Beam Pipeline**
