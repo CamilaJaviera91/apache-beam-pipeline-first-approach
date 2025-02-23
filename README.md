@@ -316,6 +316,14 @@ Chins,Situps,Jumps
 
 ### 👨‍💻 Explanation of the Code:
 
+- This **code** will check if the **'Chins'** field meets the condition:
+    - If **'Chins'** is **greater than 10**.
+    - It will display all fields and add a new field (**Chins>10)** indicating whether the **'Chins'** field meets the previous condition:
+        - **'True'** if it does.
+        - **'False'** if it does not.
+
+### 👣 Steps
+
 1️⃣ **Importing Libraries:** <br>
 
 - **Apache Beam:** Used for building and running data processing pipelines.
