@@ -46,10 +46,7 @@ def run_pipeline(output_csv_path):
         result_pcoll | 'Print Results' >> beam.Map(print)
 
         # Write output to a single CSV file
-        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, 
-                                                             file_name_suffix='.csv', 
-                                                             num_shards=1, 
-                                                             header="Chins,Situps,Jumps,Chins(>10)")
+        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', num_shards=1, header="Chins,Situps,Jumps,Chins(>10)")
 
     print(f"Pipeline completed. Data saved to {output_csv_path}.csv")
 
