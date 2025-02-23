@@ -33,20 +33,20 @@ def run_pipeline(output_csv_path):
     """Runs an Apache Beam pipeline to filter 'Chins' > 10 and save output to CSV."""
     
     with beam.Pipeline() as pipeline:
-        # Create an initial PCollection from the data list
+        # Create a PCollection from the data list
         pcoll = pipeline | 'Create PCollection' >> beam.Create(data_list)
         
-        # Apply a transformation to add a new field based on the 'Chins' value
+        # Add new field
         result_pcoll = pcoll | 'Add New Field' >> beam.Map(add_new_field)
 
-        # Extract only values (omit field names)
-        result_pcoll = pcoll | 'Extract Values' >> beam.Map(extract_values)
-        
-        # Print results for debugging purposes
+        # Extract only values
+        result_pcoll = result_pcoll | 'Extract Values' >> beam.Map(extract_values)
+
+        # Print results for debugging
         result_pcoll | 'Print Results' >> beam.Map(print)
 
-        # Write output to CSV format
-        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', header="Chins,Situps,Jumps,Chins(>10)")
+        # Write output to a single CSV file
+        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', num_shards=1, header="Chins,Situps,Jumps,Chins(>10)")
 
     print(f"Pipeline completed. Data saved to {output_csv_path}.csv")
 
