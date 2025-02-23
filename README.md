@@ -241,6 +241,12 @@ Chins
 
 ### 👨‍💻 Explanation of the Code:
 
+- This **code** will check if the **'Chins'** field meets the condition:
+    - If **'Chins'** is **greater than 10**.
+    - It will display all fields if the **'Chins'** field meets the previous condition.
+
+### 👣 Steps
+
 1️⃣ **Importing Libraries:** <br>
 
 - **Apache Beam:** Used for building and running data processing pipelines.
