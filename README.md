@@ -105,6 +105,8 @@ print(df)
 - This code will check if the 'Chins' field meets the condition:
     - If 'Chins' is greater than 10.
 
+### 👣 Steps
+
 1️⃣ **Import Libraries:** <br>
 
 - **apache_beam:** Used for building and running data processing pipelines.
