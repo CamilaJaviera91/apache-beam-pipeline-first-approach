@@ -20,6 +20,10 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 # Convert DataFrame to a list of dictionaries (each row becomes a dictionary)
 data_list = df.to_dict(orient='records')
 
+def extract_values(row):
+    """Extracts only the values from the dictionary."""
+    return list(row.values())
+
 def add_new_field(row):
     """Adds a new boolean field 'Chins(>10)' indicating whether 'Chins' is greater than 10."""
     row['Chins(>10)'] = row['Chins'] > 10  # Create a new field based on condition
@@ -34,6 +38,9 @@ def run_pipeline(output_csv_path):
         
         # Apply a transformation to add a new field based on the 'Chins' value
         result_pcoll = pcoll | 'Add New Field' >> beam.Map(add_new_field)
+
+        # Extract only values (omit field names)
+        result_pcoll = pcoll | 'Extract Values' >> beam.Map(extract_values)
         
         # Print results for debugging purposes
         result_pcoll | 'Print Results' >> beam.Map(print)
