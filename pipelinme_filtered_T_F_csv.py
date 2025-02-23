@@ -30,4 +30,4 @@ def run_pipeline():
         result_pcoll | 'Print Results' >> beam.Map(print)
 
 if __name__ == "__main__":
-    run_pipeline()C
+    run_pipeline()
