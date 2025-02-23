@@ -21,6 +21,10 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 # Convert DataFrame to a list of dictionaries
 data_list = df.to_dict(orient='records')
 
+def extract_values(row):
+    """Extracts only the values from the dictionary."""
+    return list(row.values())
+
 def run_pipeline(output_csv_path):
     """Runs an Apache Beam pipeline to filter 'Chins' > 10 and save output to CSV."""
     
@@ -31,8 +35,14 @@ def run_pipeline(output_csv_path):
             | 'Filter Chins > 10' >> beam.Filter(lambda row: row["Chins"] > 10)  # Keep only rows where "Chins" > 10
         )
 
+        # Extract only values (omit field names)
+        result_pcoll = filtered_data | 'Extract Values' >> beam.Map(extract_values)
+
         # Write output to CSV format
-        filtered_data | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', header="Chins,Situps,Jumps")
+        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', header="Chins,Situps,Jumps")
+
+        # Print results for debugging purposes
+        result_pcoll | 'Print Results' >> beam.Map(print)
 
     print(f"Pipeline completed. Data saved to {output_csv_path}.csv")
 
