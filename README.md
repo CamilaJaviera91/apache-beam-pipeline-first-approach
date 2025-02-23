@@ -98,7 +98,7 @@ print(df)
 
 # 🛠 Code Explanation 
 
-## 💻 pipeline.py
+## 💻 1. pipeline.py
 
 ### 👨‍💻 Explanation of the Code:
 
