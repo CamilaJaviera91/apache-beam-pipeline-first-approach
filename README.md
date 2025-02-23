@@ -323,4 +323,12 @@ Chins,Situps,Jumps
 - Converts the **dataset** into a **Pandas DataFrame**.
 - Transforms it into a **list of dictionaries** (data_list) to be used with **Apache Beam**.
 
-4️⃣ **Defining the Apache Beam Pipeline**
+4️⃣ **Function: extract_values:**
+
+- Takes a **dictionary** (a row of the dataset).
+- Returns only the values (without column names).
+
+5️⃣ **Function: add_new_field:**
+
+- **True** if 'Chins' > 10.
+- **False** otherwise.
