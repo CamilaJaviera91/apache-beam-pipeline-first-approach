@@ -294,7 +294,7 @@ Chins,Situps,Jumps
 ---
 
 
-## pipeline_to_dataframa.py 💻
+## pipeline_filtered_T_F_csv.py 💻
 
 ### 👨‍💻 Explanation of the Code:
 
