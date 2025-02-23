@@ -360,7 +360,7 @@ Chins  Situps  Jumps
 15     250     80
 ```
 
-- **Output .csv (Chins > 10)**
+- **Output .csv (Chins>10)**
 
 ```
 Chins,Situps,Jumps,Chins(>10)
