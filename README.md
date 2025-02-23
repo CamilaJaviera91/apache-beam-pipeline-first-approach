@@ -225,7 +225,7 @@ Chins
 
 ---
 
-## pipeline_to_dataframa.py 💻
+## 3. pipeline_to_dataframe.py 💻
 
 ### 👨‍💻 Explanation of the Code:
 
