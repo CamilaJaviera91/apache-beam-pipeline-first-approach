@@ -39,6 +39,9 @@ def run_pipeline():
             | 'Format to CSV' >> beam.Map(lambda x: f"{x['Chins']}")  # Format the data to a CSV-friendly string format
         )
 
+        # Print results for debugging purposes
+        output_data | 'Print Results' >> beam.Map(print)
+
         # Write the output data to a CSV file in the specified output path
         output_data | 'Write to CSV' >> beam.io.WriteToText(output_path, file_name_suffix='.csv', header='Chins')
 
