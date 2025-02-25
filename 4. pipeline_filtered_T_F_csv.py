@@ -21,8 +21,8 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 data_list = df.to_dict(orient='records')
 
 def extract_values(row):
-    """Extracts only the values from the dictionary."""
-    return list(row.values())
+    """Extracts values from the dictionary and returns them as a comma-separated string."""
+    return ', '.join(map(str, row.values()))
 
 def add_new_field(row):
     """Adds a new boolean field 'Chins(>10)' indicating whether 'Chins' is greater than 10."""
@@ -46,7 +46,12 @@ def run_pipeline(output_csv_path):
         result_pcoll | 'Print Results' >> beam.Map(print)
 
         # Write output to a single CSV file
-        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(output_csv_path, file_name_suffix='.csv', num_shards=1, header="Chins,Situps,Jumps,Chins(>10)")
+        result_pcoll | 'Write to CSV' >> beam.io.WriteToText(
+        output_csv_path,
+        file_name_suffix='.csv',
+        num_shards=1,
+        header="Chins,Situps,Jumps,Chins(>10)"
+    )
 
     print(f"Pipeline completed. Data saved to {output_csv_path}.csv")
 
