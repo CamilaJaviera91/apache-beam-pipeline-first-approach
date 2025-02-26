@@ -409,6 +409,4 @@ Chins,Situps,Jumps,Chins(>10)
 
 ---
 
-# 🛠 Code Explanation - visualization folder
-
-## 💻 1. view_column_chart.py
+## 💻 5. pipeline_group.py
