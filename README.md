@@ -436,3 +436,17 @@ Chins,Situps,Jumps,Chins(>10)
 
 - Defines bins and labels to categorize the **'Chins'** data into specified ranges.
 - **df['Chins Range']:** Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
+
+4️⃣ **Extract 'Chins Range' Data:**
+
+- Extracts the **'Chins Range'** column as a **pandas** Series.
+
+5️⃣ **Defining the Apache Beam Pipeline:**
+
+- **beam.Pipeline():** Initializes a new Apache Beam pipeline.
+- **beam.Create(data_list):** Converts the data_list into a PCollection, which is Beam's distributed data structure.
+- **beam.combiners.Count.PerElement():** Counts the occurrences of each unique element in the PCollection.
+- **beam.Map(lambda x:** f'{x[0]},{x[1]}'): Formats the output as a CSV string.
+- **beam.Map(print):** Prints each element of the PCollection to the console.
+- **beam.io.WriteToText(output_path, shard_name_template=''):** Writes the results to a text file at the specified output_path.
+
