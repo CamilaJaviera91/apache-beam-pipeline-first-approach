@@ -102,7 +102,7 @@ print(df)
 
 ---
 
-# 🛠 Code Explanation 
+# 🛠 Code Explanation - pipeline folder
 
 ## 💻 1. pipeline.py
 
