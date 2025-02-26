@@ -243,7 +243,7 @@ Chins
 
 ---
 
-## 3. pipeline_to_dataframe.py 💻
+## 💻 3. pipeline_to_dataframe.py
 
 ### 👨‍💻 Explanation of the Code:
 
@@ -323,7 +323,7 @@ Chins,Situps,Jumps
 ---
 
 
-## 4. pipeline_filtered_T_F_csv.py 💻
+## 💻 4. pipeline_filtered_T_F_csv.py 
 
 ### 👨‍💻 Explanation of the Code:
 
@@ -410,3 +410,5 @@ Chins,Situps,Jumps,Chins(>10)
 ---
 
 # 🛠 Code Explanation - visualization folder
+
+## 💻 1. view_column_chart
