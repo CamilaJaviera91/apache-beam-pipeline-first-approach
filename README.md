@@ -458,3 +458,29 @@ Chins,Situps,Jumps,Chins(>10)
 6️⃣ **Execute the Pipeline:** <br>
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
+
+7️⃣ **Example Output:**
+
+- **Original Dataset**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+15     250     80
+8      150     70
+6      200     84
+```
+
+- **Output .csv**
+
+```
+Chins_Range,Count
+0-5,2
+5-10,2
+10-15,1
+15-20,1
+```
+
+---
