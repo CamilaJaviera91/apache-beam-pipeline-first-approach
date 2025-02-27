@@ -41,7 +41,7 @@ def run_pipeline(output_path):
         data | 'Print Results' >> beam.Map(print)
         
         # Write output to a single CSV file
-        data | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='')
+        data | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='', header='Chins_Range,Count')
 
 if __name__ == "__main__":
 
