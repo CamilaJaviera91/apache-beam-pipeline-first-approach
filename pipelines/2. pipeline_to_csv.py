@@ -2,15 +2,6 @@
 import apache_beam as beam  # Apache Beam for data processing pipeline
 from sklearn.datasets import load_linnerud as dataset  # Load the Linnerud dataset from scikit-learn
 import pandas as pd  # Pandas for handling data in DataFrame format
-import os  # OS module for file and directory operations
-import glob  # Glob module to search for files with a specific pattern
-
-# Get the current working directory (same folder as the script)
-folder = os.getcwd()
-
-# Create a new subfolder inside the current working directory for storing the downloaded data
-download = "download"
-download = os.path.join(folder, download)  # Path to the download folder
 
 # Load the Linnerud dataset
 dt = dataset()
@@ -19,11 +10,8 @@ dt = dataset()
 df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 # Define the function to run the Apache Beam pipeline
-def run_pipeline():
-    # Define the output path where the filtered data will be saved
-    output_path = os.path.join(download, "chins_filtered")  # Path without file extension
+def run_pipeline(output_path):
 
-    # Create a pipeline using the DirectRunner (runs locally)
     with beam.Pipeline() as pipeline:
         
         # Create a PCollection from the 'Chins' column of the DataFrame
@@ -43,17 +31,12 @@ def run_pipeline():
         output_data | 'Print Results' >> beam.Map(print)
 
         # Write the output data to a CSV file in the specified output path
-        output_data | 'Write to CSV' >> beam.io.WriteToText(output_path, file_name_suffix='.csv', header='Chins')
+        output_data | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='')
 
 # Run the pipeline if the script is executed as the main program
 if __name__ == '__main__':
-    run_pipeline()  # Execute the Apache Beam pipeline
-
-    # After running the pipeline, find the generated CSV file and rename it
-    generated_files = glob.glob(os.path.join(download, "chins_filtered-*.csv"))  # Search for CSV files in the output folder
-    if generated_files:  # Check if any output files were found
-        final_path = os.path.join(download, "chins_filtered.csv")  # Define the final path with a standardized name
-        os.rename(generated_files[0], final_path)  # Rename the first generated file to the final path
-        print(f"File saved to: {final_path}")  # Print confirmation message
-    else:
-        print("No output file found!")  # Print error message if no output file is generated
+    
+    # Define output file path
+    output_path = './download/chins_filtered.csv'
+    
+    run_pipeline(output_path)  # Execute the Apache Beam pipeline
