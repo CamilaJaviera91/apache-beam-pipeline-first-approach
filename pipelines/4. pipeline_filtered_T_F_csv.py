@@ -1,7 +1,6 @@
 import apache_beam as beam  # Apache Beam for data processing pipeline
 from sklearn.datasets import load_linnerud as dataset  # Load the Linnerud dataset from scikit-learn
 import pandas as pd  # Pandas for handling data in DataFrame format
-import glob  # Glob module to search for files with a specific pattern
 
 # Load the Linnerud dataset
 dt = dataset()
