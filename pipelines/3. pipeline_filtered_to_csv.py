@@ -30,7 +30,7 @@ def run_pipeline(output_path):
         result_pcoll = filtered_data | 'Extract Values' >> beam.Map(extract_values)
 
         # Write output to CSV format
-        result_pcoll | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='')
+        result_pcoll | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='', header='Chins,Situps,Jumps')
 
         # Print results for debugging purposes
         result_pcoll | 'Print Results' >> beam.Map(print)
