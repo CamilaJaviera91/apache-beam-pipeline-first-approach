@@ -31,7 +31,7 @@ def run_pipeline(output_path):
         output_data | 'Print Results' >> beam.Map(print)
 
         # Write the output data to a CSV file in the specified output path
-        output_data | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='')
+        output_data | 'Write Results' >> beam.io.WriteToText(output_path, shard_name_template='', header='Chins')
 
 # Run the pipeline if the script is executed as the main program
 if __name__ == '__main__':
