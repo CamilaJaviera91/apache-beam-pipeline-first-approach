@@ -496,3 +496,29 @@ Chins_Range,Count
 
 - The resulting CSV file is read into **df_results**.
 - A **bar chart** is created to visualize the distribution of **'Chins Range'** frequencies.
+
+8️⃣ - **Original Dataset**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+15     250     80
+8      150     70
+6      200     84
+```
+
+- **Output .csv**
+
+```
+Chins_Range,Count
+0-5,2
+5-10,2
+10-15,1
+15-20,1
+```
+
+![Results](./images/pic4.png)
+
+---
