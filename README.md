@@ -512,7 +512,6 @@ Chins  Situps  Jumps
 - **Output .csv**
 
 ```
-Chins_Range,Count
 0-5,2
 5-10,2
 10-15,1
