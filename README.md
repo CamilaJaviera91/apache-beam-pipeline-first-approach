@@ -481,3 +481,9 @@ Chins_Range,Count
 - Extracts the **'Chins Range'** column as a **pandas** Series.
 
 5️⃣ **Defining the Apache Beam Pipeline:** <br>
+
+- Creates a PCollection from data_list.
+- Counts occurrences of each unique element using Count.PerElement().
+- Formats the results as CSV strings.
+- Prints the results for debugging.
+- Writes the results to a specified output path as a CSV file.
