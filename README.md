@@ -482,8 +482,8 @@ Chins_Range,Count
 
 5️⃣ **Defining the Apache Beam Pipeline:** <br>
 
-- Creates a PCollection from data_list.
-- Counts occurrences of each unique element using Count.PerElement().
+- Creates a **PCollection** from **data_list.**
+- Counts occurrences of each unique element using **Count.PerElement().**
 - Formats the results as CSV strings.
 - Prints the results for debugging.
 - Writes the results to a specified output path as a CSV file.
@@ -494,5 +494,5 @@ Chins_Range,Count
 
 7️⃣ **Visualizing the Results:** <br>
 
-- The resulting CSV file is read into df_results.
-- A bar chart is created to visualize the distribution of 'Chins Range' frequencies.
+- The resulting CSV file is read into **df_results**.
+- A **bar chart** is created to visualize the distribution of **'Chins Range'** frequencies.
