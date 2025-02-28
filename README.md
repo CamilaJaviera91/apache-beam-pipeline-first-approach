@@ -455,5 +455,14 @@ Chins_Range,Count
     - 5-10
     - 10-15
     - 15-20
-    
+
 - It will also display the results as a bar chart.
+
+### 👣 Steps
+
+1️⃣ **Importing Libraries:** <br>
+
+- **Apache Beam:** Used for building and running data processing pipelines.
+- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
+- **Pandas:** A powerful data manipulation library for handling structured data.
+- **matplotlib.pyplot:** Used for creating visualizations
