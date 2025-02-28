@@ -487,3 +487,12 @@ Chins_Range,Count
 - Formats the results as CSV strings.
 - Prints the results for debugging.
 - Writes the results to a specified output path as a CSV file.
+
+6️⃣ **Execute the Pipeline:** <br>
+
+- The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
+
+7️⃣ **Visualizing the Results:** <br>
+
+- The resulting CSV file is read into df_results.
+- A bar chart is created to visualize the distribution of 'Chins Range' frequencies.
