@@ -519,6 +519,8 @@ Chins_Range,Count
 15-20,1
 ```
 
+- **Chart**
+
 ![Results](./images/pic4.png)
 
 ---
