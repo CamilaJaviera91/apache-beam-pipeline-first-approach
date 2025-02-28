@@ -444,3 +444,16 @@ Chins_Range,Count
 ```
 
 ---
+
+## 💻 6. pipeline_group_plot.py
+
+### 👨‍💻 Explanation of the Code:
+
+- This code will categorize the 'Chins' data into four ranges:
+
+    - 0-5
+    - 5-10
+    - 10-15
+    - 15-20
+    
+- It will also display the results as a bar chart.
