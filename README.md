@@ -479,3 +479,5 @@ Chins_Range,Count
 4️⃣ **Extract 'Chins Range' Data:** <br>
 
 - Extracts the **'Chins Range'** column as a **pandas** Series.
+
+5️⃣ **Defining the Apache Beam Pipeline:** <br>
