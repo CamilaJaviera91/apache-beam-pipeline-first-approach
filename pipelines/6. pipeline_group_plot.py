@@ -57,10 +57,15 @@ if __name__ == "__main__":
 
     # Create the column chart
     plt.figure(figsize=(10, 6))
-    plt.bar(df_results['Chins_Range'], df_results['Count'], color='lightblue')
+    bars = plt.bar(df_results['Chins_Range'], df_results['Count'], color='lightblue')
     plt.xlabel('Chins Range')
     plt.ylabel('Frequency')
     plt.title('Distribution of Chins by Range')
-        
+
+     # Add value labels on top of each bar
+    for bar in bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width() / 2, yval + 0, str(yval), ha='center', va='bottom')
+
     # Mostrar el gráfico
     plt.show()
