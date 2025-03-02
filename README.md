@@ -474,7 +474,7 @@ Chins_Range,Count
 3️⃣ **Categorize Data:**
 
 - Defines bins and labels to categorize the **'Chins'** data into specified ranges.
-- **df['Chins Range']:** Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
+- Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
 
 4️⃣ **Extract 'Chins Range' Data:**
 
