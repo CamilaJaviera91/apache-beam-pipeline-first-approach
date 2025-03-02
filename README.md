@@ -178,34 +178,7 @@ True
     - If **'Chins'** is **greater than 10**.
     - Only the **'Chins'** field will be displayed, along with whether it meets the previous condition.
 
-### 👣 Steps
-
-1️⃣ **Importing Libraries:**
-
-- **Apache Beam:** Used for building and running data processing pipelines.
-- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
-- **Pandas:** A powerful data manipulation library for handling structured data.
-- **OS & Glob:** Used for file and directory management.
-
-2️⃣ **Load and Prepare Data:**
-
-- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
-
-3️⃣ **Apache Beam Pipeline:**
-
-1. Initializes an Apache Beam pipeline.
-2. Create 
-    - Extracts the "Chins" column from the DataFrame.
-    - Converts it into a PCollection (a distributed dataset in Apache Beam).
-3. Filters out all rows where "Chins" ≤ 10.
-4. Formats the filtered values into a string format suitable for writing to a CSV file.
-5. Writes the output into a CSV file with a header.
-
-4️⃣ **Execute the Pipeline:**
-
-- The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
-
-5️⃣ **Example Output:**
+### Example Output:
 
 - **Original Dataset**
 
