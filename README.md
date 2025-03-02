@@ -325,40 +325,9 @@ Chins  Situps  Jumps
 
     2. Recategorize the 'Chins' field to determine if it is above or below the average."
 
-### 👣 Steps
+### Example Output:
 
-1️⃣ **Importing Libraries:**
-
-- **Apache Beam:** Used for building and running data processing pipelines.
-- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
-- **Pandas:** A powerful data manipulation library for handling structured data.
-
-2️⃣ **Load and Prepare Data:**
-
-- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
-
-3️⃣ **Categorize Data and Helper Functions::**
-
-- Defines bins and labels to categorize the **'Chins'** data into specified ranges.
-- Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
-- Adds a **'Chins_vs_Avg'** field to each row, indicating whether **'Chins'** is above or below the average.
-- Extracts values from the **dictionary** and returns them as a comma-separated string.
-
-4️⃣ **Defining the Apache Beam Pipeline:**
-
-- An Apache Beam pipeline is initiated using a context manager.
-- A PCollection is created from the data list.
-- The average number of 'Chins' is calculated using Beam's MeanCombineFn.
-- The add_comparison_field function is applied to each element, utilizing the calculated average as a side input.
-- The rows are formatted into comma-separated strings.
-- The results are written to a CSV file at the specified output path.
-- The results are also printed to the console.
-
-6️⃣ **Execute the Pipeline:**
-
-- The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
-
-7️⃣ **Example Output:**
+- **Original Dataset**
 
 ```
 Chins  Situps  Jumps
