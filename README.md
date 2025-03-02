@@ -340,7 +340,7 @@ Chins  Situps  Jumps
 - **Output .csv (Chins>10)**
 
 ```
-Chins,Situps,Jumps,Chins Range,Chins_vs_Avg
+Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
 5.0,162.0,60.0,5-10,Below Average
 2.0,110.0,60.0,0-5,Below Average
 12.0,101.0,101.0,10-15,Above Average
