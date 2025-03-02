@@ -550,3 +550,10 @@ Chins  Situps  Jumps
 2️⃣ **Load and Prepare Data:**
 
 - The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
+
+3️⃣ **Categorize Data and Helper Functions::**
+
+- Defines bins and labels to categorize the **'Chins'** data into specified ranges.
+- Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
+- Adds a **'Chins_vs_Avg'** field to each row, indicating whether **'Chins'** is above or below the average.
+- Extracts values from the **dictionary** and returns them as a comma-separated string.
