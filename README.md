@@ -567,3 +567,29 @@ Chins  Situps  Jumps
 - The rows are formatted into comma-separated strings.
 - The results are written to a CSV file at the specified output path.
 - The results are also printed to the console.
+
+6️⃣ **Execute the Pipeline:**
+
+- The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
+
+7️⃣ **Example Output:**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+12     105     37
+```
+
+- **Output .csv (Chins>10)**
+
+```
+Chins,Situps,Jumps,Chins Range,Chins_vs_Avg
+5.0,162.0,60.0,5-10,Below Average
+2.0,110.0,60.0,0-5,Below Average
+12.0,101.0,101.0,10-15,Above Average
+12.0,105.0,37.0,10-15,Above Average
+```
+
+---
