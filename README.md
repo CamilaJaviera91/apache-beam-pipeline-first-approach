@@ -237,7 +237,7 @@ Chins
 
 ### 👣 Steps
 
-1️⃣ **Importing Libraries:** <br>
+1️⃣ **Importing Libraries:**
 
 - **Apache Beam:** Used for building and running data processing pipelines.
 - **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
@@ -248,7 +248,7 @@ Chins
 
 - The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
 
-3️⃣ **Loading and Transforming the Dataset** <br>
+3️⃣ **Loading and Transforming the Dataset** 
 
 - Loads the **Linnerud dataset**, which contains exercise-related data with three features:
     - "Chins" (pull-ups)
@@ -268,7 +268,7 @@ Chins
 - Filters rows where "Chins" is greater than 10.
 - Saves the filtered data as a CSV file.
 
-6️⃣ **Execute the Pipeline:** <br>
+6️⃣ **Execute the Pipeline:**
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
 
