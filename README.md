@@ -523,3 +523,18 @@ Chins  Situps  Jumps
 ![Results](./images/pic4.png)
 
 ---
+
+## 💻 7. pipeline_group_2.py
+
+### 👨‍💻 Explanation of the Code:
+
+- This code will perform two tasks, adding two new fields to the data:
+
+    1. Categorize the 'Chins' field into four ranges.
+
+        - 0-5
+        - 5-10
+        - 10-15
+        - 15-20
+
+    2. Recategorize the 'Chins' field to determine if it is above or below the average."
