@@ -28,7 +28,7 @@
 pip install apache-beam
 ```
 
-2️⃣ _Install Apache Beam with Google Cloud Support (Optional)_: <br>
+2️⃣ _Install Apache Beam with Google Cloud Support (Optional)_: 
     - _This includes additional dependencies for Google Cloud Storage, Pub/Sub, and BigQuery_
 
 ```
@@ -59,7 +59,7 @@ print(beam.__version__)
 pip install pandas
 ```
 
-2️⃣ Verify Installation: <br>
+2️⃣ Verify Installation:
 
 ```
 import pandas as pd
