@@ -1,4 +1,3 @@
-# Import necessary libraries
 import apache_beam as beam  # Apache Beam for data processing
 from sklearn.datasets import load_linnerud as dataset  # Importing the Linnerud dataset from scikit-learn
 import pandas as pd  # Pandas for data manipulation
