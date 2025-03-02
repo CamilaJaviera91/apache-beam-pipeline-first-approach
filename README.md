@@ -538,3 +538,15 @@ Chins  Situps  Jumps
         - 15-20
 
     2. Recategorize the 'Chins' field to determine if it is above or below the average."
+
+### 👣 Steps
+
+1️⃣ **Importing Libraries:**
+
+- **Apache Beam:** Used for building and running data processing pipelines.
+- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
+- **Pandas:** A powerful data manipulation library for handling structured data.
+
+2️⃣ **Load and Prepare Data:**
+
+- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
