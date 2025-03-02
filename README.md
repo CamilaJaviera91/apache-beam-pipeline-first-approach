@@ -114,34 +114,34 @@ print(df)
 
 ### 👣 Steps
 
-1️⃣ **Import Libraries:** <br>
+1️⃣ **Import Libraries:**
 
 - **apache_beam:** Used for building and running data processing pipelines.
 - **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.    
 - **pandas:** A powerful data manipulation library for handling structured data.
 
-2️⃣ **Load and Prepare Data:** <br>
+2️⃣ **Load and Prepare Data:**
 
 - The Linnerud dataset is loaded and converted into a Pandas DataFrame for easier manipulation.
 
-3️⃣ **Define the Pipeline:** <br>
+3️⃣ **Define the Pipeline:**
 
 - A function run_pipeline is defined to encapsulate the pipeline logic.
 - Within this function, a pipeline is created using the with statement, ensuring proper resource management.
 
-4️⃣ **Create PCollection:** <br>
+4️⃣ **Create PCollection:**
 
 - The 'Chins' column from the DataFrame is converted to a list and then to a PCollection using beam.Create.
 
-5️⃣ **Apply Transformation:** <br>
+5️⃣ **Apply Transformation:**
 
 - The **PCollection** undergoes a transformation where each value is checked to determine if it exceeds 10. This is implemented using **beam.Map** with a **lambda** function for efficiency.
 
-6️⃣ **Output Results:** <br>
+6️⃣ **Output Results:**
 
 The results are printed to the console using **beam.Map(print)**.
 
-7️⃣ **Execute the Pipeline:** <br>
+7️⃣ **Execute the Pipeline:**
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
 
