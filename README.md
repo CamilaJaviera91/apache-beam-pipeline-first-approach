@@ -557,3 +557,13 @@ Chins  Situps  Jumps
 - Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
 - Adds a **'Chins_vs_Avg'** field to each row, indicating whether **'Chins'** is above or below the average.
 - Extracts values from the **dictionary** and returns them as a comma-separated string.
+
+4️⃣ **Defining the Apache Beam Pipeline:**
+
+- An Apache Beam pipeline is initiated using a context manager.
+- A PCollection is created from the data list.
+- The average number of 'Chins' is calculated using Beam's MeanCombineFn.
+- The add_comparison_field function is applied to each element, utilizing the calculated average as a side input.
+- The rows are formatted into comma-separated strings.
+- The results are written to a CSV file at the specified output path.
+- The results are also printed to the console.
