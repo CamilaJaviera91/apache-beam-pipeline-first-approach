@@ -460,23 +460,23 @@ Chins_Range,Count
 
 ### 👣 Steps
 
-1️⃣ **Importing Libraries:** <br>
+1️⃣ **Importing Libraries:**
 
 - **Apache Beam:** Used for building and running data processing pipelines.
 - **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
 - **Pandas:** A powerful data manipulation library for handling structured data.
 - **matplotlib.pyplot:** Used for creating visualizations
 
-2️⃣ **Load and Prepare Data:** <br>
+2️⃣ **Load and Prepare Data:**
 
 - The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
 
-3️⃣ **Categorize Data:** <br>
+3️⃣ **Categorize Data:**
 
 - Defines bins and labels to categorize the **'Chins'** data into specified ranges.
 - **df['Chins Range']:** Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
 
-4️⃣ **Extract 'Chins Range' Data:** <br>
+4️⃣ **Extract 'Chins Range' Data:**
 
 - Extracts the **'Chins Range'** column as a **pandas** Series.
 
