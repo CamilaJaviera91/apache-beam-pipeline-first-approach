@@ -480,7 +480,7 @@ Chins_Range,Count
 
 - Extracts the **'Chins Range'** column as a **pandas** Series.
 
-5️⃣ **Defining the Apache Beam Pipeline:** <br>
+5️⃣ **Defining the Apache Beam Pipeline:**
 
 - Creates a **PCollection** from **data_list.**
 - Counts occurrences of each unique element using **Count.PerElement().**
@@ -488,11 +488,11 @@ Chins_Range,Count
 - Prints the results for debugging.
 - Writes the results to a specified output path as a CSV file.
 
-6️⃣ **Execute the Pipeline:** <br>
+6️⃣ **Execute the Pipeline:**
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
 
-7️⃣ **Visualizing the Results:** <br>
+7️⃣ **Visualizing the Results:**
 
 - The resulting CSV file is read into **df_results**.
 - A **bar chart** is created to visualize the distribution of **'Chins Range'** frequencies.
