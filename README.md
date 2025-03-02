@@ -112,7 +112,7 @@ print(df)
     - If **'Chins'** is **greater than 10**.
     - It will only display **'True'** or **'False'** if **'Chins'** meets the previous condition."
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
@@ -145,7 +145,7 @@ True
     - If **'Chins'** is **greater than 10**.
     - Only the **'Chins'** field will be displayed, along with whether it meets the previous condition.
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
@@ -175,7 +175,7 @@ Chins
     - If **'Chins'** is **greater than 10**.
     - It will display all fields if the **'Chins'** field meets the previous condition.
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
@@ -207,7 +207,7 @@ Chins,Situps,Jumps
         - **'True'** if it does.
         - **'False'** if it does not.
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
@@ -242,7 +242,7 @@ Chins,Situps,Jumps,Chins(>10)
     - 10-15
     - 15-20
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
@@ -281,7 +281,7 @@ Chins_Range,Count
 
 - It will also display the results as a bar chart.
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
@@ -325,7 +325,7 @@ Chins  Situps  Jumps
 
     2. Recategorize the 'Chins' field to determine if it is above or below the average."
 
-### Example Output:
+### ✅ Example Output:
 
 - **Original Dataset**
 
