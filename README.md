@@ -69,13 +69,13 @@ print(pd.__version__)
 
 ### Install scikit-learn and call a Dataset
 
-1️⃣ Install Using pip: <br>
+1️⃣ Install Using pip:
 
 ```
 pip install scikit-learn
 ```
 
-2️⃣ Verify Installation: <br>
+2️⃣ Verify Installation:
 
 ```
 import sklearn
