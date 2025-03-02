@@ -235,44 +235,7 @@ Chins
     - If **'Chins'** is **greater than 10**.
     - It will display all fields if the **'Chins'** field meets the previous condition.
 
-### 👣 Steps
-
-1️⃣ **Importing Libraries:**
-
-- **Apache Beam:** Used for building and running data processing pipelines.
-- **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
-- **Pandas:** A powerful data manipulation library for handling structured data.
-- **OS & Glob:** Used for file and directory management.
-
-2️⃣ **Load and Prepare Data:**
-
-- The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
-
-3️⃣ **Loading and Transforming the Dataset** 
-
-- Loads the **Linnerud dataset**, which contains exercise-related data with three features:
-    - "Chins" (pull-ups)
-    - "Situps" (sit-ups)
-    - "Jumps" (jumps)
-- Converts the **dataset** into a **Pandas DataFrame**.
-- Transforms it into a **list of dictionaries** (data_list) to be used with **Apache Beam**.
-
-4️⃣ **Function: extract_values:**
-
-- Takes a **dictionary** (a row of the dataset).
-- Returns only the values (without column names).
-
-5️⃣ **Defining the Apache Beam Pipeline**
-
-- Converts the list of dictionaries into a PCollection (Apache Beam's data structure).
-- Filters rows where "Chins" is greater than 10.
-- Saves the filtered data as a CSV file.
-
-6️⃣ **Execute the Pipeline:**
-
-- The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
-
-7️⃣ **Example Output:**
+### Example Output:
 
 - **Original Dataset**
 
