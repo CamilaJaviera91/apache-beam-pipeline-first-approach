@@ -387,26 +387,26 @@ Chins,Situps,Jumps,Chins(>10)
 
 ### 👣 Steps
 
-1️⃣ **Importing Libraries:** <br>
+1️⃣ **Importing Libraries:**
 
 - **Apache Beam:** Used for building and running data processing pipelines.
 - **load_linnerud:** A dataset from scikit-learn containing physiological and exercise data.
 - **Pandas:** A powerful data manipulation library for handling structured data.
 
-2️⃣ **Load and Prepare Data:** <br>
+2️⃣ **Load and Prepare Data:**
 
 - The **Linnerud dataset** is loaded and converted into a **Pandas DataFrame** for easier manipulation.
 
-3️⃣ **Categorize Data:** <br>
+3️⃣ **Categorize Data:**
 
 - Defines bins and labels to categorize the **'Chins'** data into specified ranges.
 - **df['Chins Range']:** Creates a new column in the DataFrame that assigns each **'Chins'** value to its corresponding range.
 
-4️⃣ **Extract 'Chins Range' Data:** <br>
+4️⃣ **Extract 'Chins Range' Data:**
 
 - Extracts the **'Chins Range'** column as a **pandas** Series.
 
-5️⃣ **Defining the Apache Beam Pipeline:** <br>
+5️⃣ **Defining the Apache Beam Pipeline:**
 
 - Initializes a new Apache Beam pipeline.
 - Converts the data_list into a PCollection, which is Beam's distributed data structure.
@@ -415,7 +415,7 @@ Chins,Situps,Jumps,Chins(>10)
 - Prints each element of the PCollection to the console.
 - Writes the results to a text file at the specified output_path.
 
-6️⃣ **Execute the Pipeline:** <br>
+6️⃣ **Execute the Pipeline:**
 
 - The **run_pipeline** function is called within the ***if __name__ == '__main__':*** block to ensure the pipeline runs when the script is executed directly.
 
