@@ -27,16 +27,38 @@ structure_str = buffer.getvalue()
 # Combine the strings
 text_content = f"First rows of the dataset:\n{head_str}\n\nStructure:\n{structure_str}\n\nNull values:\n{nulls_str}"
 
+# Create a PDF file for dataset summary
 with PdfPages(output_path_r) as pdf:
-    # Create a figure
+    
+    # **Page 1: Table with First Rows**
+    fig, ax = plt.subplots(figsize=(12, 4))
+    ax.axis('tight')
+    ax.axis('off')
+
+    # Convert df.head() to a table
+    table = ax.table(cellText=df.head().values,  
+                     colLabels=df.columns,
+                     loc='center',
+                     cellLoc='center')
+
+    # Formatting
+    table.auto_set_font_size(False)
+    table.set_fontsize(10)
+    table.scale(1.2, 1.2)
+
+    plt.title('First Rows of the Dataset', fontsize=14)
+    pdf.savefig(fig, bbox_inches='tight')
+    plt.close(fig)
+
+    # **Page 2: Data Structure & Null Values**
     fig, ax = plt.subplots(figsize=(8, 6))
-    ax.axis('off')  # Hide the axes
+    ax.axis('off')  # Hide axes
 
-    # Add the text to the figure
-    ax.text(0.5, 0.5, text_content, ha='center', va='center', fontsize=10, wrap=True)
+    text_content = f"Dataset Structure:\n{structure_str}\n\nNull Values:\n{nulls_str}"
+    ax.text(0.01, 0.99, text_content, ha='left', va='top', fontsize=10, wrap=True, transform=ax.transAxes)
 
-    # Save the figure to the PDF
-    pdf.savefig(fig)
+    plt.title('Dataset Summary', fontsize=14)
+    pdf.savefig(fig, bbox_inches='tight')
     plt.close(fig)
 
 print("PDF file created successfully!")
