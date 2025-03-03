@@ -323,7 +323,7 @@ Chins  Situps  Jumps
         - 10-15
         - 15-20
 
-    2. Recategorize the 'Chins' field to determine if it is above or below the average."
+    2. Recategorize the 'Chins' field to determine if it is above or below the average.
 
 ### ✅ Example Output:
 
@@ -337,7 +337,7 @@ Chins  Situps  Jumps
 12     105     37
 ```
 
-- **Output .csv (Chins>10)**
+- **Output .csv**
 
 ```
 Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
@@ -348,3 +348,40 @@ Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
 ```
 
 ---
+
+## 💻 8. pipeline_all_fields.py
+
+### 👨‍💻 Explanation of the Code:
+
+- This code will perform two tasks, adding two new fields to the data:
+
+    1. Categorize the 'Chins', 'Situps' and 'Jumps' fields into four ranges.
+
+        - 0-5
+        - 5-10
+        - 10-15
+        - 15-20
+
+    2. Recategorize the 'Chins', 'Situps' and 'Jumps' field to determine if it is above or below the average.
+
+### ✅ Example Output:
+
+- **Original Dataset**
+
+```
+Chins  Situps  Jumps
+5      162     60
+2      110     60
+12     101     101
+12     105     37
+```
+
+- **Output .csv**
+
+```
+Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,Chins_vs_Avg,Situps_vs_Avg,Jumps_vs_Avg
+5.0,162.0,60.0,5-10,150-200,50-75,Below Average,Above Average,Below Average
+2.0,110.0,60.0,0-5,100-150,50-75,Below Average,Below Average,Below Average
+12.0,101.0,101.0,10-15,100-150,100-125,Above Average,Below Average,Above Average
+12.0,105.0,37.0,10-15,100-150,25-50,Above Average,Below Average,Below Average
+```
