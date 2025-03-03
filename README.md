@@ -318,10 +318,14 @@ Chins  Situps  Jumps
 
     1. Categorize the 'Chins' field into four ranges.
 
-        - 0-5
-        - 5-10
-        - 10-15
-        - 15-20
+        | Chins |
+        |-------|
+        |  0-5  |
+        |  5-10 |
+        | 10-15 |
+        | 15-20 |
+        | 20-25 |
+        | 25-30 |
 
     2. Recategorize the 'Chins' field to determine if it is above or below the average.
 
@@ -357,10 +361,14 @@ Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
 
     1. Categorize the 'Chins', 'Situps' and 'Jumps' fields into four ranges.
 
-        - 0-5
-        - 5-10
-        - 10-15
-        - 15-20
+    | Chins | Situps | Jumps |
+    |-------|--------|-------|
+    |  0-5  |  0-50  |  0-25 |
+    |  5-10 | 50-100 | 25-50 |
+    | 10-15 |100-150 | 50-75 |
+    | 15-20 |150-200 |75-100 |
+    | 20-25 |200-250 |100-125|
+    | 25-30 |250-300 |125-150|
 
     2. Recategorize the 'Chins', 'Situps' and 'Jumps' field to determine if it is above or below the average.
 
