@@ -86,15 +86,17 @@ with PdfPages(output_path_h) as pdf:
 
 print('PDF file created successfully!')
 
-# Create a PDF file with histograms
+# Create a PDF file with density plots
 with PdfPages(output_path_d) as pdf:
-    # Identify outliers and understand the distribution of each variable.
-    for feature in df.columns:
+    # Identify numeric columns only
+    numeric_columns = df.select_dtypes(include=['number']).columns
+
+    for feature in numeric_columns:
         plt.figure(figsize=(10, 6))
         ax = plt.gca()  # Get the current axis
         
         # Create the KDE plot for the current feature
-        sns.kdeplot(data=df, x=feature, shade=True, ax=ax)
+        sns.kdeplot(data=df, x=feature, fill=True, ax=ax)  # Replaced shade=True with fill=True
         
         plt.title(f'Density Distribution of {feature}')
         plt.xlabel(feature)
