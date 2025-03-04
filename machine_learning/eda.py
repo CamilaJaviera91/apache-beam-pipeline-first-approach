@@ -15,6 +15,7 @@ df = pd.read_csv('./download/chins_filtered_7.csv')
 output_dir = './download'
 os.makedirs(output_dir, exist_ok=True)
 output_path_h = os.path.join(output_dir, 'histogram.pdf')
+output_path_d = os.path.join(output_dir, 'density_analysis.pdf')
 output_path_r = os.path.join(output_dir, 'dataset_report.pdf')
 
 # Capture outputs as strings
@@ -63,7 +64,7 @@ with PdfPages(output_path_r) as pdf:
 
 print("PDF file created successfully!")
 
-# Create a PDF file with the plots
+# Create a PDF file with histograms
 with PdfPages(output_path_h) as pdf:
     # Identify outliers and understand the distribution of each variable.
     for feature in df.columns:
@@ -78,6 +79,26 @@ with PdfPages(output_path_h) as pdf:
         plt.title(f'Histogram of {feature}')  # Corrected typo: "Hitogram" -> "Histogram"
         plt.xlabel(feature)
         plt.ylabel('Frequency')
+        
+        # Save the current figure to the PDF
+        pdf.savefig()
+        plt.close()
+
+print('PDF file created successfully!')
+
+# Create a PDF file with histograms
+with PdfPages(output_path_d) as pdf:
+    # Identify outliers and understand the distribution of each variable.
+    for feature in df.columns:
+        plt.figure(figsize=(10, 6))
+        ax = plt.gca()  # Get the current axis
+        
+        # Create the KDE plot for the current feature
+        sns.kdeplot(data=df, x=feature, shade=True, ax=ax)
+        
+        plt.title(f'Density Distribution of {feature}')
+        plt.xlabel(feature)
+        plt.ylabel('Density')
         
         # Save the current figure to the PDF
         pdf.savefig()
