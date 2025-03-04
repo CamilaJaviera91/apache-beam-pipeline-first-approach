@@ -76,7 +76,7 @@ with PdfPages(output_path_h) as pdf:
         for container in ax.containers:
             ax.bar_label(container, fmt='%d')
         
-        plt.title(f'Histogram of {feature}')  # Corrected typo: "Hitogram" -> "Histogram"
+        plt.title(f'Histogram of {feature}')
         plt.xlabel(feature)
         plt.ylabel('Frequency')
         
