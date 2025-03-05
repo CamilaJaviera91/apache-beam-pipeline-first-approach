@@ -25,6 +25,8 @@ labels = {
 for feature in dt.feature_names:
     df[f'{feature} Range'] = pd.cut(df[feature], bins=bins[feature], labels=labels[feature], right=False)
 
+df['User'] = [f'User {i+1}' for i in range(len(df))]
+
 # Convert DataFrame to a list of dictionaries (each row becomes a dictionary)
 data_list = df.to_dict(orient='records')
 
