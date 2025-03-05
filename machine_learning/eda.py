@@ -33,15 +33,20 @@ def file_hash(filepath):
 # Function to save a PDF only if it has changed
 def save_if_modified(new_filepath, pdf_buffer):
     """Saves the PDF only if the file is new or has changed."""
-    new_hash = hashlib.sha256(pdf_buffer.getvalue()).hexdigest()
+    new_content = pdf_buffer.getvalue()
+    new_hash = hashlib.sha256(new_content).hexdigest()
     existing_hash = file_hash(new_filepath)
 
+    print(f"Checking file: {new_filepath}")
+    print(f"Existing Hash: {existing_hash}")
+    print(f"New Hash: {new_hash}")
+
     if existing_hash != new_hash:
+        print(f"✅ Content changed! Saving {new_filepath}...")
         with open(new_filepath, 'wb') as f:
-            f.write(pdf_buffer.getvalue())
-        print(f"File saved: {new_filepath}")
+            f.write(new_content)
     else:
-        print(f"No changes detected. File not saved: {new_filepath}")
+        print(f"⏭️ No changes detected. File not saved: {new_filepath}")
 
 # ---------------------------
 # Create Dataset Report PDF
