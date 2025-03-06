@@ -401,3 +401,17 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 ---
 
 # 🛠 Code Explanation - 'machine_learning' folder
+
+## 💻 1. eda.py
+
+### 👨‍💻 Explanation of the Code:
+
+- This code will allow us to analyze the available information to determine what type of analysis we can perform afterward.
+
+- Three analyses (so far) will be conducted:
+
+    1. Dataset report.
+    2. Histograms.
+    3. Density analysis.
+
+- Finally, the reports will be downloaded as a PDF file.
