@@ -419,3 +419,5 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 ### ✅ Example Output:
 
 - I will not display the outputs, as they are saved as images and can be accessed from the **'downloads'** folder.
+
+## 💻 2. advanced_statistical_analysis
