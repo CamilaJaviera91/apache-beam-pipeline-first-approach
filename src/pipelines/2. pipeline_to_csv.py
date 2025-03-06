@@ -36,6 +36,6 @@ def run_pipeline(output_path):
 if __name__ == '__main__':
     
     # Define output file path
-    output_path = './download/chins_filtered_1.csv'
+    output_path = './src/download/chins_filtered_1.csv'
     
     run_pipeline(output_path)  # Execute the Apache Beam pipeline
