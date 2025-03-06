@@ -10,7 +10,7 @@ import io
 sns.set_style('whitegrid')
 
 # Load the dataset from the specified CSV file.
-df = pd.read_csv('./download/chins_filtered_7.csv')
+df = pd.read_csv('./src/download/chins_filtered_7.csv')
 
 # Ensure the output directory exists
 output_dir = './download'
