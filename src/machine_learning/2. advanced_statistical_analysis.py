@@ -3,7 +3,7 @@ import pandas as pd
 import scipy.stats as stats
 
 # Load the dataset from the specified CSV file.
-df = pd.read_csv('./download/chins_filtered_7.csv')
+df = pd.read_csv('./src/download/chins_filtered_7.csv')
 
 def hypothesis_testing(value_mean, name_mean):
     for i, mean in enumerate(value_mean):
