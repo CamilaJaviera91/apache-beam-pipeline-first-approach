@@ -415,3 +415,7 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
     3. Density analysis.
 
 - Finally, the reports will be downloaded as a PDF file.
+
+### ✅ Example Output:
+
+- I will not display the outputs, as they are saved as images and can be accessed from the **'downloads'** folder.
