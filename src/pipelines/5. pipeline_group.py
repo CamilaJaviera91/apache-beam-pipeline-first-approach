@@ -46,7 +46,7 @@ def run_pipeline(output_path):
 if __name__ == "__main__":
 
     # Define output file path
-    output_path = './download/chins_filtered_4.csv'
+    output_path = './src/download/chins_filtered_4.csv'
     
     # Run the pipeline with the specified output path
     run_pipeline(output_path)
