@@ -102,7 +102,7 @@ print(df)
 
 ---
 
-# 🛠 Code Explanation - pipeline folder
+# 🛠 Code Explanation - 'pipeline' folder
 
 ## 💻 1. pipeline.py
 
@@ -397,3 +397,7 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 12.0,101.0,101.0,10-15,100-150,100-125,User 3,Above Average,Below Average,Above Average
 12.0,105.0,37.0,10-15,100-150,25-50,User 4,Above Average,Below Average,Below Average
 ```
+
+---
+
+# 🛠 Code Explanation - 'machine_learning' folder
