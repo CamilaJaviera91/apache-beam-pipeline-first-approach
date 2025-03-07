@@ -2,17 +2,24 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import silhouette_score
+
+
 # Load the dataset from the specified CSV file.
 df = pd.read_csv('./src/download/chins_filtered_7.csv')
 
-def hypothesis_testing(value_mean, name_mean):
+def hypothesis_testing(value_mean, name):
     for i, mean in enumerate(value_mean):
         # Wrap around when accessing the next mean and its corresponding name
         next_i = (i + 1) % len(value_mean)
         next_mean = value_mean[next_i]
-        next_name = name_mean[next_i]
+        next_name = name[next_i]
 
-        print(f"Mean {name_mean[i]}: {mean}")
+        print(f"Mean {name[i]}: {mean}")
         print(f"Mean {next_name}: {next_mean}")
 
         # Generate random data for group_a and group_b with the current and next mean
@@ -32,10 +39,62 @@ def hypothesis_testing(value_mean, name_mean):
 
         print('\n')
 
+def clustering(value, name):
+    for i in range(len(value)):
+        next_index = (i + 1) % len(value)
+
+        # Convert to DataFrame for processing
+        data = pd.DataFrame({name[i]: value[i], name[next_index]: value[next_index]})
+
+        # Scale data
+        scaler = StandardScaler()
+        data_scaled = scaler.fit_transform(data)
+
+        # Elbow method for k selection
+        inertia = []
+        K_range = range(2, 11)  # Fix: Start from k=2
+
+        for k in K_range:
+            kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
+            kmeans.fit(data_scaled)
+            inertia.append(kmeans.inertia_)
+
+        plt.figure(figsize=(8, 5))
+        plt.plot(K_range, inertia, marker='o')
+        plt.xlabel('Number of Clusters')
+        plt.ylabel('Inertia (SSE)')
+        plt.title(f'Elbow Method for k selection (Iteration {i})')
+        plt.show()
+
+        # Apply K-Means
+        kmeans = KMeans(n_clusters=2, random_state=42, n_init=10)
+        clusters = kmeans.fit_predict(data_scaled)
+
+        # Convert scaled data back to DataFrame for visualization
+        data = pd.DataFrame(data_scaled, columns=[name[i], name[next_index]])
+        data['Cluster'] = clusters
+
+        # Scatter plot with clusters
+        plt.figure(figsize=(8, 6))
+        sns.scatterplot(x=data[name[i]], y=data[name[next_index]], hue=data['Cluster'], palette='viridis')
+        plt.xlabel(name[i])
+        plt.ylabel(name[next_index])
+        plt.title(f'Customer Segmentation with K-Means (Iteration {i})')
+        plt.show()
+
+        # Compute silhouette score
+        silhouette_avg = silhouette_score(data_scaled, clusters)
+        print(f'Iteration {i} - Silhouette Score: {silhouette_avg:.2f}')
+        
+        print('\n')
+        
 if __name__ == '__main__':
     # Calculate the means
+    value = [df['Situps'], df['Jumps'], df['Chins']]
     value_mean = [float(df['Situps'].mean()), float(df['Jumps'].mean()), float(df['Chins'].mean())]
-    name_mean = ['Situps', 'Jumps', 'Chins']
+    name = ['Situps', 'Jumps', 'Chins']
 
     # Call hypothesis testing function
-    hypothesis_testing(value_mean, name_mean)
+    hypothesis_testing(value_mean, name)
+    
+    clustering(value, name)
