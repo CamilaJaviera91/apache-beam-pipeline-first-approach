@@ -94,7 +94,5 @@ if __name__ == '__main__':
     value_mean = [float(df['Situps'].mean()), float(df['Jumps'].mean()), float(df['Chins'].mean())]
     name = ['Situps', 'Jumps', 'Chins']
 
-    # Call hypothesis testing function
-    hypothesis_testing(value_mean, name)
-    
+    hypothesis_testing(value_mean, name)    
     clustering(value, name)
