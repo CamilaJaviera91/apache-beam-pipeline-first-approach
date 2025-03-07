@@ -432,3 +432,29 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 - More code may be added in the future. For now, this analysis is conducted to test how it works.
 
 ### ✅ Example Output:
+
+#### hypothesis_testing:
+
+```
+Mean Situps: 145.55
+Mean Jumps: 70.3
+T-statistic: 24.8380
+P-value: 0.0000
+We reject the null hypothesis: the means are significantly different.
+```
+
+```
+Mean Jumps: 70.3
+Mean Chins: 9.45
+T-statistic: 22.5460
+P-value: 0.0000
+We reject the null hypothesis: the means are significantly different.
+```
+
+```
+Mean Chins: 9.45
+Mean Situps: 145.55
+T-statistic: -53.9819
+P-value: 0.0000
+We reject the null hypothesis: the means are significantly different.
+```
