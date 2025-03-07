@@ -458,3 +458,15 @@ T-statistic: -53.9819
 P-value: 0.0000
 We reject the null hypothesis: the means are significantly different.
 ```
+
+#### clustering:
+
+```
+Iteration 0 - Silhouette Score: 0.57
+
+
+Iteration 1 - Silhouette Score: 0.53
+
+
+Iteration 2 - Silhouette Score: 0.55
+```
