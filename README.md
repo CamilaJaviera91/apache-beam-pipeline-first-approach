@@ -421,3 +421,12 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 - I will not display the outputs, as they are saved as images and can be accessed from the **'downloads'** folder.
 
 ## 💻 2. advanced_statistical_analysis
+
+### 👨‍💻 Explanation of the Code:
+
+- In this code, we will perform two analyses using three variables: 'Chins', 'Jumps', and 'Situps':
+
+1. Hypothesis testing
+2. Clustering
+
+- More code may be added in the future. For now, this analysis is conducted to test how it works.
