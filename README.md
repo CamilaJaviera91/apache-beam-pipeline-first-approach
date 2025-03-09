@@ -490,7 +490,7 @@ Average Optimal number of clusters: 5.33
 
 #### mse_mae
 
-- In this case the optimal number of clusters is **5**
+- In this case the optimal number of clusters is **5.33** so we are going to use **5**
 
 ```
 Enter the number of clusters: 5
