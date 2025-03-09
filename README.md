@@ -493,6 +493,8 @@ Average Optimal number of clusters: 5.33
 - In this case we are going to put **5** clusters
 
 ```
+Enter the number of clusters: 5
+
 MSE for Situps: 3.8000
 MAE for Situps: 1.6000
 
