@@ -420,7 +420,7 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 
 - I will not display the outputs, as they are saved as images and can be accessed from the **'downloads'** folder.
 
-## 💻 2. advanced_statistical_analysis
+## 💻 2. advanced_statistical_analysis.py
 
 ### 👨‍💻 Explanation of the Code:
 
@@ -468,3 +468,15 @@ Iteration 1 - Silhouette Score: 0.53
 
 Iteration 2 - Silhouette Score: 0.55
 ```
+
+---
+
+## 💻 3. mae_mse.py
+
+### 👨‍💻 Explanation of the Code:
+
+### ✅ Example Output:
+
+#### cluster
+
+#### mse_mae
