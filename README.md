@@ -109,7 +109,7 @@ print(df)
 ### 👨‍💻 Explanation of the Code:
 
 - This **code** will check if the **'Chins'** field meets the condition:
-    - If **'Chins'** is **greater than 10**.
+    - If **'Chins'** is **greater than 10** (Chins > 10)
     - It will only display **'True'** or **'False'** if **'Chins'** meets the previous condition."
 
 ### ✅ Example Output:
