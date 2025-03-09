@@ -475,6 +475,11 @@ Iteration 2 - Silhouette Score: 0.55
 
 ### 👨‍💻 Explanation of the Code:
 
+- This code will be used for two specific tasks:
+
+1. First, the optimal number of clusters will be determined to calculate the **MSE** and **MAE**.
+2. Second, knowing the optimal number of clusters, we will manually input it to determine the values of **MSE** and **MAE**.
+
 ### ✅ Example Output:
 
 #### cluster
