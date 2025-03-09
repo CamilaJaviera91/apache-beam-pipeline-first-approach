@@ -464,9 +464,7 @@ We reject the null hypothesis: the means are significantly different.
 ```
 Iteration 0 - Silhouette Score: 0.57
 
-
 Iteration 1 - Silhouette Score: 0.53
-
 
 Iteration 2 - Silhouette Score: 0.55
 ```
