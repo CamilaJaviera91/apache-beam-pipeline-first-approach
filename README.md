@@ -483,6 +483,8 @@ Iteration 2 - Silhouette Score: 0.55
 Average Optimal number of clusters: 5.33 
 ```
 
+#### mse_mae
+
 - In this case we are going to put **5** clusters
 
 ```
@@ -495,5 +497,3 @@ MAE for Jumps: 1.6000
 MSE for Chins: 3.4500
 MAE for Chins: 1.5500
 ```
-
-#### mse_mae
