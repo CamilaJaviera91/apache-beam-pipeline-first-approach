@@ -429,7 +429,7 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 1. Hypothesis testing
 2. Clustering
 
-- More code may be added in the future. For now, this analysis is conducted to test how it works.
+- More may be added in the future. For now, this analysis is conducted to test how it works.
 
 ### ✅ Example Output:
 
