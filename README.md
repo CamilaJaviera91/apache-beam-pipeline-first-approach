@@ -5,7 +5,7 @@
 ✅ Sequence of **data** processing **steps**, where the **output** of one step becomes the **input** for the **next**. <br>
 ✅ Commonly used in **data engineering**, **machine learning**, and **software development** to automate **workflows** and ensure efficient **processing**.
 
-![Pipeline](./images/pic1.png)
+![Pipeline](./src/images/pic1.png)
 
 ## 🅱️ What's Apache-Beam?
 
@@ -14,7 +14,7 @@
 ✅ Works well with **Google Cloud Dataflow**, **Apache Flink**, and **Apache Spark**. <br>
 ✅ Supports **Python**, **Java**, and **Go** for pipeline development.
 
-![Apache](./images/pic2.png)
+![Apache](./src/images/pic2.png)
 
 # 👨‍💻 Preparing to code 
 
@@ -49,7 +49,7 @@ print(beam.__version__)
 ✅ It is part of the **pandas library** and supports fast **data manipulation**.<br>
 ✅ It is widely used in **data science**, **analytics**, and **machine learning**.
 
-![Dataframe](./images/pic3.png)
+![Dataframe](./src/images/pic3.png)
 
 ### Install pandas
 
