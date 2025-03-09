@@ -310,7 +310,7 @@ Chins  Situps  Jumps
 
 - **Chart**
 
-![Results](./images/pic4.png)
+![Results](./src/images/pic4.png)
 
 ---
 
