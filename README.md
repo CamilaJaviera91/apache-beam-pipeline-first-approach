@@ -521,6 +521,7 @@ Regression between 'Chins' (X) and 'Situps' (y):
 Coef: [8.91420912]
 Intercept: [48.85254692]
 R2: -0.9073586607636288
+MSE: 4104.6358
 ```
 
 ---
