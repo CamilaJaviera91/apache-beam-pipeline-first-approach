@@ -11,8 +11,8 @@ def linear_regression(df, selected_columns):
 
         next_index = (i + 1) % len(selected_columns)
 
-        X = df[[selected_columns[i]]]
-        y = df[selected_columns[next_index]]
+        X = np.array(df[[selected_columns[i]]]).reshape(-1, 1)
+        y = np.array(df[selected_columns[next_index]]).reshape(-1, 1)
 
         print(f"\nRegression between '{selected_columns[i]}' (X) and '{selected_columns[next_index]}' (y):")
 
