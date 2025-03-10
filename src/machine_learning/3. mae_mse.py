@@ -23,8 +23,8 @@ def mse_mae(df, selected_columns):
         mse = mean_squared_error(y_test, y_pred)
         mae = mean_absolute_error(y_test, y_pred)
 
-        print(f'MSE for {selected_columns[i]}: {mse:.4f}')
-        print(f'MAE for {selected_columns[i]}: {mae:.4f}')
+        print(f'MSE for {selected_columns[i]} and {selected_columns[next_index]}: {mse:.4f}')
+        print(f'MAE for {selected_columns[i]} and {selected_columns[next_index]}: {mae:.4f}')
         
         print('\n')
 
