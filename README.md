@@ -475,32 +475,19 @@ Iteration 2 - Silhouette Score: 0.55
 
 ### 👨‍💻 Explanation of the Code:
 
-- This code will be used for two specific tasks:
-
-1. First, the optimal number of clusters will be determined to calculate the **MSE** and **MAE**.
-2. Second, knowing the optimal number of clusters, we will manually input it to determine the values of **MSE** and **MAE**.
+- This code will determinate the values of **MSE** and **MAE**.
 
 ### ✅ Example Output:
 
-#### cluster
-
-```
-Average Optimal number of clusters: 5.33 
-```
-
 #### mse_mae
 
-- In this case the optimal number of clusters is **5.33** so we are going to use **5**
-
 ```
-Enter the number of clusters: 5
+MSE for Situps and Jumps: 634.3627
+MAE for Situps and Jumps: 20.7871
 
-MSE for Situps: 3.8000
-MAE for Situps: 1.6000
+MSE for Jumps and Chins: 19.5509
+MAE for Jumps and Chins: 3.2659
 
-MSE for Jumps: 3.6000
-MAE for Jumps: 1.6000
-
-MSE for Chins: 3.4500
-MAE for Chins: 1.5500
+MSE for Chins and Situps: 4104.6358
+MAE for Chins and Situps: 62.2909
 ```
