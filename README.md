@@ -491,3 +491,36 @@ MAE for Jumps and Chins: 3.2659
 MSE for Chins and Situps: 4104.6358
 MAE for Chins and Situps: 62.2909
 ```
+
+---
+
+## 💻 4. linear_regression.py
+
+### 👨‍💻 Explanation of the Code:
+
+- This code will determine the values of MSE, and with that, we can create the linear regression model.
+
+### ✅ Example Output:
+
+#### linear_regression
+
+```
+Regression between 'Situps' (X) and 'Jumps' (y):
+Coef: [0.59928125]
+Intercept: [-14.48871613]
+R2: -0.05727110678696068
+MSE: 634.3626640721764
+
+Regression between 'Jumps' (X) and 'Chins' (y):
+Coef: [0.04901222]
+Intercept: [6.6107958]
+R2: -0.1333849214258287
+MSE: 19.550889894595546
+
+Regression between 'Chins' (X) and 'Situps' (y):
+Coef: [8.91420912]
+Intercept: [48.85254692]
+R2: -0.9073586607636288
+```
+
+---
