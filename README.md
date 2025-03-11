@@ -482,14 +482,14 @@ Iteration 2 - Silhouette Score: 0.53
 #### mse_mae
 
 ```
-MSE for Situps and Jumps: 634.3627
-MAE for Situps and Jumps: 20.7871
+MSE for Situps Range and Jumps Range: 189.8777
+MAE for Situps Range and Jumps Range: 10.6886
 
-MSE for Jumps and Chins: 19.5509
-MAE for Jumps and Chins: 3.2659
+MSE for Jumps Range and Chins Range: 17.6324
+MAE for Jumps Range and Chins Range: 3.0729
 
-MSE for Chins and Situps: 4104.6358
-MAE for Chins and Situps: 62.2909
+MSE for Chins Range and Situps Range: 2265.5290
+MAE for Chins Range and Situps Range: 46.8652
 ```
 
 ---
