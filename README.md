@@ -533,3 +533,41 @@ MSE: 2265.5290337162564
 ```
 
 ---
+
+## 💻 5. decision_tree.py
+
+### 👨‍💻 Explanation of the Code:
+
+- The code builds decision trees by using each column in **selected_columns** as a feature and the **next column** as a label, training the model on 70% of the data and testing on 30%. 
+- It evaluates accuracy and visualizes the tree for each pair. 
+- The process repeats in a circular manner for all selected columns.
+
+### ✅ Example Output:
+
+#### decision_tree
+
+```
+Decision tree between 'Situps Range' (X) and 'Jumps Range' (y)
+X_train shape: (14, 1)
+y_train shape: (14,)
+Unique classes in y_train: [ 25  50 100 125]
+Accuracy: 0.50
+```
+
+```
+Decision tree between 'Jumps Range' (X) and 'Chins Range' (y)
+X_train shape: (14, 1)
+y_train shape: (14,)
+Unique classes in y_train: [ 0  5 10 15]
+Accuracy: 0.33
+```
+
+```
+Decision tree between 'Chins Range' (X) and 'Situps Range' (y)
+X_train shape: (14, 1)
+y_train shape: (14,)
+Unique classes in y_train: [ 50 100 150 200 250]
+Accuracy: 0.00
+```
+
+---
