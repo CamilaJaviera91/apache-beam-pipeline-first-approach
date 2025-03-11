@@ -505,23 +505,27 @@ MAE for Chins Range and Situps Range: 46.8652
 #### linear_regression
 
 ```
-Regression between 'Situps' (X) and 'Jumps' (y):
-Coef: [0.59928125]
-Intercept: [-14.48871613]
-R2: -0.05727110678696068
-MSE: 634.3626640721764
+Regression between 'Situps Range' (X) and 'Jumps Range' (y):
+Coef: [0.35509138]
+Intercept: [4.50391645]
+R2: 0.5581028260779296
+MSE: 189.87769191963963
+```
 
-Regression between 'Jumps' (X) and 'Chins' (y):
-Coef: [0.04901222]
-Intercept: [6.6107958]
-R2: -0.1333849214258287
-MSE: 19.550889894595546
+```
+Regression between 'Jumps Range' (X) and 'Chins Range' (y):
+Coef: [0.06666667]
+Intercept: [4.47916667]
+R2: -0.02588383838383823
+MSE: 17.63237847222222
+```
 
-Regression between 'Chins' (X) and 'Situps' (y):
-Coef: [8.91420912]
-Intercept: [48.85254692]
-R2: -0.9073586607636288
-MSE: 4104.6358
+```
+Regression between 'Chins Range' (X) and 'Situps Range' (y):
+Coef: [7.99373041]
+Intercept: [65.67398119]
+R2: -0.3181259832530947
+MSE: 2265.5290337162564
 ```
 
 ---
