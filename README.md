@@ -436,25 +436,25 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 #### hypothesis_testing:
 
 ```
-Mean Situps: 145.55
-Mean Jumps: 70.3
-T-statistic: 24.8380
+Mean Situps: 135.0
+Mean Jumps: 53.75
+T-statistic: 42.5296
 P-value: 0.0000
 We reject the null hypothesis: the means are significantly different.
 ```
 
 ```
-Mean Jumps: 70.3
-Mean Chins: 9.45
-T-statistic: 22.5460
+Mean Jumps: 53.75
+Mean Chins: 7.5
+T-statistic: 16.8558
 P-value: 0.0000
 We reject the null hypothesis: the means are significantly different.
 ```
 
 ```
-Mean Chins: 9.45
-Mean Situps: 145.55
-T-statistic: -53.9819
+Mean Chins: 7.5
+Mean Situps: 135.0
+T-statistic: -57.3606
 P-value: 0.0000
 We reject the null hypothesis: the means are significantly different.
 ```
@@ -462,11 +462,11 @@ We reject the null hypothesis: the means are significantly different.
 #### clustering:
 
 ```
-Iteration 0 - Silhouette Score: 0.57
+Iteration 0 - Silhouette Score: 0.55
 
-Iteration 1 - Silhouette Score: 0.53
+Iteration 1 - Silhouette Score: 0.49
 
-Iteration 2 - Silhouette Score: 0.55
+Iteration 2 - Silhouette Score: 0.53
 ```
 
 ---
