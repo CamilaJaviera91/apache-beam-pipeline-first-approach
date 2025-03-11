@@ -40,6 +40,6 @@ def linear_regression(df, selected_columns):
 if __name__ == '__main__':
 
     df = pd.read_csv('./src/download/chins_filtered_7.csv')
-    selected_columns = ['Situps', 'Jumps', 'Chins']
+    selected_columns = ['Situps Range', 'Jumps Range', 'Chins Range']
 
     linear_regression(df, selected_columns)
