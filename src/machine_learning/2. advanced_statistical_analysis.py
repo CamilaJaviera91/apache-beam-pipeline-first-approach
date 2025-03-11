@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans
@@ -26,7 +25,7 @@ def hypothesis_testing(value_mean, name):
         group_a = np.random.normal(loc=mean, scale=10, size=30)
         group_b = np.random.normal(loc=next_mean, scale=10, size=30)
 
-        # Perform t-test
+        # Perform t-test to compare the means of the two groups
         t_stat, p_value = stats.ttest_ind(group_a, group_b)
         
         print(f"T-statistic: {t_stat:.4f}")
@@ -46,11 +45,11 @@ def clustering(value, name):
         # Convert to DataFrame for processing
         data = pd.DataFrame({name[i]: value[i], name[next_index]: value[next_index]})
 
-        # Scale data
+        # Scale the data using StandardScaler
         scaler = StandardScaler()
         data_scaled = scaler.fit_transform(data)
 
-        # Elbow method for k selection
+        # Elbow method for selecting the optimal number of clusters (k)
         inertia = []
         K_range = range(2, 11)  # Fix: Start from k=2
 
@@ -59,6 +58,7 @@ def clustering(value, name):
             kmeans.fit(data_scaled)
             inertia.append(kmeans.inertia_)
 
+        # Plot inertia (sum of squared errors) for different values of k
         plt.figure(figsize=(8, 5))
         plt.plot(K_range, inertia, marker='o')
         plt.xlabel('Number of Clusters')
@@ -66,7 +66,7 @@ def clustering(value, name):
         plt.title(f'Elbow Method for k selection (Iteration {i})')
         plt.show()
 
-        # Apply K-Means
+        # Apply K-Means clustering with 2 clusters (chosen based on elbow method)
         kmeans = KMeans(n_clusters=2, random_state=42, n_init=10)
         clusters = kmeans.fit_predict(data_scaled)
 
@@ -82,17 +82,19 @@ def clustering(value, name):
         plt.title(f'Customer Segmentation with K-Means (Iteration {i})')
         plt.show()
 
-        # Compute silhouette score
+        # Compute silhouette score to evaluate the clustering quality
         silhouette_avg = silhouette_score(data_scaled, clusters)
         print(f'Iteration {i} - Silhouette Score: {silhouette_avg:.2f}')
         
         print('\n')
         
 if __name__ == '__main__':
-    # Calculate the means
-    value = [df['Situps'], df['Jumps'], df['Chins']]
-    value_mean = [float(df['Situps'].mean()), float(df['Jumps'].mean()), float(df['Chins'].mean())]
+    # Calculate the means for the specified ranges
+    value = [df['Situps Range'], df['Jumps Range'], df['Chins Range']]
+    value_mean = [float(df['Situps Range'].mean()), float(df['Jumps Range'].mean()), float(df['Chins Range'].mean())]
     name = ['Situps', 'Jumps', 'Chins']
 
+    # Perform hypothesis testing to compare the means
     hypothesis_testing(value_mean, name)    
+    # Perform clustering using K-Means
     clustering(value, name)
