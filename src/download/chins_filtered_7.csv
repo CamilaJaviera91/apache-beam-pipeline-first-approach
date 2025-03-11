@@ -8,7 +8,7 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 8.0, 101.0, 38.0, 5, 100, 25, User 7, Below Average, Below Average, Below Average
 6.0, 125.0, 40.0, 5, 100, 25, User 8, Below Average, Below Average, Below Average
 15.0, 200.0, 40.0, 15, 200, 25, User 9, Above Average, Above Average, Below Average
-17.0, 251.0, 250.0, 15, 250, nan, User 10, Above Average, Above Average, Above Average
+17.0, 251.0, 250.0, 15, 250, 125, User 10, Above Average, Above Average, Above Average
 17.0, 120.0, 38.0, 15, 100, 25, User 11, Above Average, Below Average, Below Average
 13.0, 210.0, 115.0, 10, 200, 100, User 12, Above Average, Above Average, Above Average
 14.0, 215.0, 105.0, 10, 200, 100, User 13, Above Average, Above Average, Above Average
