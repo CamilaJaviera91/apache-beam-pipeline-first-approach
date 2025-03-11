@@ -12,7 +12,7 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 bins = {
     'Chins':  [0, 5,  10,  15,  20,  25,  30],
     'Situps': [0, 50, 100, 150, 200, 250, 300],
-    'Jumps':  [0, 25, 50,  75,  100, 125, 150]
+    'Jumps':  [0, 25, 50,  75,  100, 125, 300]
 }
 
 labels = {
