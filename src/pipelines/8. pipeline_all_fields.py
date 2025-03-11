@@ -10,15 +10,15 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 # Define bins and labels for categorizing the data
 bins = {
-    'Chins': [0, 5, 10, 15, 20, 25, 30],
+    'Chins':  [0, 5,  10,  15,  20,  25,  30],
     'Situps': [0, 50, 100, 150, 200, 250, 300],
-    'Jumps': [0, 25, 50, 75, 100, 125, 150]
+    'Jumps':  [0, 25, 50,  75,  100, 125, 150]
 }
 
 labels = {
-    'Chins': ['0', '5', '10', '15', '20', '25'],
-    'Situps': ['0', '50', '100', '150', '200', '250'],
-    'Jumps': ['0', '25', '50', '75', '100', '125']
+    'Chins':  [0, 5,  10,  15,  20,  25],
+    'Situps': [0, 50, 100, 150, 200, 250],
+    'Jumps':  [0, 25, 50,  75,  100, 125]
 }
 
 # Categorize data into defined ranges
