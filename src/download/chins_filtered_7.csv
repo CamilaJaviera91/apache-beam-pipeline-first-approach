@@ -1,21 +1,21 @@
 Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps_vs_Avg,Jumps_vs_Avg
-5.0, 162.0, 60.0, 5, 150, 50, User 1, Below Average, Above Average, Below Average
-2.0, 110.0, 60.0, 0, 100, 50, User 2, Below Average, Below Average, Below Average
-12.0, 101.0, 101.0, 10, 100, 100, User 3, Above Average, Below Average, Above Average
-12.0, 105.0, 37.0, 10, 100, 25, User 4, Above Average, Below Average, Below Average
-13.0, 155.0, 58.0, 10, 150, 50, User 5, Above Average, Above Average, Below Average
-4.0, 101.0, 42.0, 0, 100, 25, User 6, Below Average, Below Average, Below Average
-8.0, 101.0, 38.0, 5, 100, 25, User 7, Below Average, Below Average, Below Average
-6.0, 125.0, 40.0, 5, 100, 25, User 8, Below Average, Below Average, Below Average
-15.0, 200.0, 40.0, 15, 200, 25, User 9, Above Average, Above Average, Below Average
-17.0, 251.0, 250.0, 15, 250, 125, User 10, Above Average, Above Average, Above Average
-17.0, 120.0, 38.0, 15, 100, 25, User 11, Above Average, Below Average, Below Average
-13.0, 210.0, 115.0, 10, 200, 100, User 12, Above Average, Above Average, Above Average
-14.0, 215.0, 105.0, 10, 200, 100, User 13, Above Average, Above Average, Above Average
-1.0, 50.0, 50.0, 0, 50, 50, User 14, Below Average, Below Average, Below Average
-6.0, 70.0, 31.0, 5, 50, 25, User 15, Below Average, Below Average, Below Average
-12.0, 210.0, 120.0, 10, 200, 100, User 16, Above Average, Above Average, Above Average
-4.0, 60.0, 25.0, 0, 50, 25, User 17, Below Average, Below Average, Below Average
-11.0, 230.0, 80.0, 10, 200, 75, User 18, Above Average, Above Average, Above Average
-15.0, 225.0, 73.0, 15, 200, 50, User 19, Above Average, Above Average, Above Average
-2.0, 110.0, 43.0, 0, 100, 25, User 20, Below Average, Below Average, Below Average
+5.0, 162.0, 60.0, 5, 150, 50, User 1, 1, 0, 1
+2.0, 110.0, 60.0, 0, 100, 50, User 2, 1, 1, 1
+12.0, 101.0, 101.0, 10, 100, 100, User 3, 0, 1, 0
+12.0, 105.0, 37.0, 10, 100, 25, User 4, 0, 1, 1
+13.0, 155.0, 58.0, 10, 150, 50, User 5, 0, 0, 1
+4.0, 101.0, 42.0, 0, 100, 25, User 6, 1, 1, 1
+8.0, 101.0, 38.0, 5, 100, 25, User 7, 1, 1, 1
+6.0, 125.0, 40.0, 5, 100, 25, User 8, 1, 1, 1
+15.0, 200.0, 40.0, 15, 200, 25, User 9, 0, 0, 1
+17.0, 251.0, 250.0, 15, 250, 125, User 10, 0, 0, 0
+17.0, 120.0, 38.0, 15, 100, 25, User 11, 0, 1, 1
+13.0, 210.0, 115.0, 10, 200, 100, User 12, 0, 0, 0
+14.0, 215.0, 105.0, 10, 200, 100, User 13, 0, 0, 0
+1.0, 50.0, 50.0, 0, 50, 50, User 14, 1, 1, 1
+6.0, 70.0, 31.0, 5, 50, 25, User 15, 1, 1, 1
+12.0, 210.0, 120.0, 10, 200, 100, User 16, 0, 0, 0
+4.0, 60.0, 25.0, 0, 50, 25, User 17, 1, 1, 1
+11.0, 230.0, 80.0, 10, 200, 75, User 18, 0, 0, 0
+15.0, 225.0, 73.0, 15, 200, 50, User 19, 0, 0, 0
+2.0, 110.0, 43.0, 0, 100, 25, User 20, 1, 1, 1
