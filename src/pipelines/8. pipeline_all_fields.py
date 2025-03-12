@@ -33,7 +33,7 @@ data_list = df.to_dict(orient='records')
 def add_comparison_fields(row, averages):
     """Adds a new field indicating whether the new field is above or below average."""
     for feature in averages:
-        row[f'{feature}_vs_Avg'] = 'Above Average' if row[feature] > averages[feature] else 'Below Average'
+        row[f'{feature}_vs_Avg'] = '0' if row[feature] > averages[feature] else '1'
     return row
 
 def extract_values(row):
