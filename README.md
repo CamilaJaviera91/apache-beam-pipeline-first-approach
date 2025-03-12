@@ -392,11 +392,11 @@ Chins  Situps  Jumps
 
 ```
 Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps_vs_Avg,Jumps_vs_Avg
-5.0,162.0,60.0,5,150,50,User 1,Below Average,Above Average,Below Average
-2.0,110.0,60.0,0,100,50,User 2,Below Average,Below Average,Below Average
-12.0,101.0,101.0,10,100,100,User 3,Above Average,Below Average,Above Average
-12.0,105.0,37.0,10,100,25,User 4,Above Average,Below Average,Below Average
-13.0,155.0,58.0,10,150,50,User 5,Above Average,Above Average,Below Average
+5.0,162.0,60.0,5,150,50,User 1,1,0,1
+2.0,110.0,60.0,0,100,50,User 2,1,1,1
+12.0,101.0,101.0,10,100,100,User 3,0,1,0
+12.0,105.0,37.0,10,100,25,User 4,0,1,1
+13.0,155.0,58.0,10,150,50,User 5,0,0,1
 ```
 
 ---
