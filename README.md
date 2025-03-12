@@ -365,6 +365,8 @@ Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
 
     1. Categorize the 'Chins', 'Situps' and 'Jumps' fields into four ranges.
 
+    <br>
+    
     | Chins     | Situps      | Jumps       |
     |-----------|-------------|-------------|
     |  0-5  (0) |  0-50  (0)  |  0-25  (0)  |
@@ -375,9 +377,10 @@ Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
     | 25-30 (25)|250-300 (250)|125-300 (125)|
 
     2. Recategorize the 'Chins', 'Situps' and 'Jumps' field to determine if it is above or below the average.
-
+    
+    <br>
+    
     | 0 | Above |
-    |---|-------|
     | 1 | Below |
 
 ### ✅ Example Output:
