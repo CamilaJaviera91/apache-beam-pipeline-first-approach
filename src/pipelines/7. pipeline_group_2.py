@@ -10,7 +10,7 @@ df = pd.DataFrame(dt.data, columns=dt.feature_names)
 
 # Define bins and labels for categorizing the 'Chins' data
 bins = [0, 5, 10, 15, 20, 25, 30]
-labels = ['0-5', '5-10', '10-15', '15-20', '20-25', '25-30']
+labels = ['0', '5', '10', '15', '20', '25']
 
 # Create a new column 'Chins Range' by categorizing 'Chins' into defined ranges
 df['Chins Range'] = pd.cut(df['Chins'], bins=bins, labels=labels, right=False)
@@ -21,7 +21,7 @@ data_list = df.to_dict(orient='records')
 def add_comparison_field(row, average_chins):
     """Adds a 'Chins_vs_Avg' field indicating whether 'Chins' is above or below average."""
     
-    row['Chins_vs_Avg'] = 'Above Average' if row['Chins'] > average_chins else 'Below Average'
+    row['Chins_vs_Avg'] = '0' if row['Chins'] > average_chins else '1'
     return row
 
 def extract_values(row):
