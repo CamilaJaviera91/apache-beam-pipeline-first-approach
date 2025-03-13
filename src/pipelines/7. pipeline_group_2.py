@@ -21,7 +21,7 @@ data_list = df.to_dict(orient='records')
 def add_comparison_field(row, average_chins):
     """Adds a 'Chins_vs_Avg' field indicating whether 'Chins' is above or below average."""
     
-    row['Chins_vs_Avg'] = 'Above Average' if row['Chins'] > average_chins else 'Below Average'
+    row['Chins_vs_Avg'] = '0' if row['Chins'] > average_chins else '1'
     return row
 
 def extract_values(row):
