@@ -49,7 +49,7 @@ print(beam.__version__)
 ✅ It is part of the **pandas library** and supports fast **data manipulation**.<br>
 ✅ It is widely used in **data science**, **analytics**, and **machine learning**.
 
-![Dataframe](./src/images/pic3.png)
+<img src="./src/images/pic3.png" alt="Dataframe" width="400"/>
 
 ### Install pandas
 
