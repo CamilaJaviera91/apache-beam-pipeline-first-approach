@@ -237,10 +237,14 @@ Chins,Situps,Jumps,Chins(>10)
 
 - This code will help us group the **'Chins'** field into **4 ranges**:
 
-    - 0-5
-    - 5-10
-    - 10-15
-    - 15-20
+    |   Chins   |
+    |-----------|
+    |  0-5  (0) |
+    |  5-10 (5) |
+    | 10-15 (10)|
+    | 15-20 (15)|
+    | 20-25 (20)|
+    | 25-30 (25)|
 
 ### ✅ Example Output:
 
@@ -260,10 +264,10 @@ Chins  Situps  Jumps
 
 ```
 Chins_Range,Count
-0-5,2
-5-10,2
-10-15,1
-15-20,1
+0,2
+5,2
+10,1
+15,1
 ```
 
 ---
