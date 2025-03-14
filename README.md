@@ -384,10 +384,11 @@ Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
     2. Recategorize the 'Chins', 'Situps' and 'Jumps' field to determine if it is above or below the average.
     
     <br>
-    
-    |---|--------------|
-    | 0 | Above Average|
-    | 1 | Below Average|
+
+    |   |               |
+    |---|---------------|
+    | 0 | Above Average |
+    | 1 | Below Average |
 
 ### ✅ Example Output:
 
