@@ -335,6 +335,8 @@ Chins  Situps  Jumps
 
     <br>
     
+    |   |               |
+    |---|---------------|
     | 0 | Above Average |
     | 1 | Below Average |
 
