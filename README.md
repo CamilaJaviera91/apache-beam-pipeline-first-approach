@@ -385,8 +385,8 @@ Chins,Situps,Jumps,Chins_Range,Chins_vs_Avg
     
     <br>
     
-    | 0 | Above |
-    | 1 | Below |
+    | 0 | Above Average |
+    | 1 | Below Average |
 
 ### ✅ Example Output:
 
