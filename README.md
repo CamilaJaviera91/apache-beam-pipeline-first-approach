@@ -5,7 +5,7 @@
 ✅ Sequence of **data** processing **steps**, where the **output** of one step becomes the **input** for the **next**. <br>
 ✅ Commonly used in **data engineering**, **machine learning**, and **software development** to automate **workflows** and ensure efficient **processing**.
 
-![Pipeline](./src/images/pic1.png)
+<img src="./src/images/pic1.png" alt="Pipeline" width="400"/>
 
 ## 🅱️ What's Apache-Beam?
 
