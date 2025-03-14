@@ -314,7 +314,7 @@ Chins  Situps  Jumps
 
 - **Chart**
 
-<img src="./src/images/pic4.png" alt="Image Description" width="400"/>
+<img src="./src/images/pic4.png" alt="Chart" width="400"/>
 
 
 ---
