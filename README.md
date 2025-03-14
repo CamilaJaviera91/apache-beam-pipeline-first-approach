@@ -274,14 +274,14 @@ Chins_Range,Count
 
 - This code will categorize the 'Chins' data into four ranges:
 
-    | Chins |
-    |-------|
-    |  0-5  |
-    |  5-10 |
-    | 10-15 |
-    | 15-20 |
-    | 20-25 |
-    | 25-30 |
+    |   Chins   |
+    |-----------|
+    |  0-5  (0) |
+    |  5-10 (5) |
+    | 10-15 (10)|
+    | 15-20 (15)|
+    | 20-25 (20)|
+    | 25-30 (25)|
 
 - It will also display the results as a bar chart.
 
