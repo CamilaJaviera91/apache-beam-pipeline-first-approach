@@ -322,16 +322,21 @@ Chins  Situps  Jumps
 
     1. Categorize the 'Chins' field into four ranges.
 
-        | Chins |
-        |-------|
-        |  0-5  |
-        |  5-10 |
-        | 10-15 |
-        | 15-20 |
-        | 20-25 |
-        | 25-30 |
+        |   Chins   |
+        |-----------|
+        |  0-5  (0) |
+        |  5-10 (5) |
+        | 10-15 (10)|
+        | 15-20 (15)|
+        | 20-25 (20)|
+        | 25-30 (25)|
 
     2. Recategorize the 'Chins' field to determine if it is above or below the average.
+
+    <br>
+    
+    | 0 | Above Average |
+    | 1 | Below Average |
 
 ### ✅ Example Output:
 
