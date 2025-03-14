@@ -14,7 +14,7 @@
 ✅ Works well with **Google Cloud Dataflow**, **Apache Flink**, and **Apache Spark**. <br>
 ✅ Supports **Python**, **Java**, and **Go** for pipeline development.
 
-![Apache](./src/images/pic2.png)
+<img src="./src/images/pic2.png" alt="Apache" width="400"/>
 
 # 👨‍💻 Preparing to code 
 
