@@ -605,3 +605,19 @@ Accuracy: 0.00
 ### ✅ Example Output:
 
 #### linear_regression
+
+
+```
+Linear Regression between 'Situps Range' (X) and 'Jumps Range' (y)
+MSE: 189.8777
+```
+
+```
+Linear Regression between 'Jumps Range' (X) and 'Chins Range' (y)
+MSE: 17.6324
+```
+
+```
+Linear Regression between 'Chins Range' (X) and 'Situps Range' (y)
+MSE: 2265.5290
+```
