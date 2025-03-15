@@ -40,9 +40,9 @@ def linear_regression(df, selected_columns):
         plt.figure(figsize=(8, 5))
         plt.scatter(X_test, y_test, color='blue', label='Real data')  # Scatter plot for real data points
         plt.plot(X_test, y_pred, color='red', label='Linear model')  # Line plot for predicted values
-        plt.xlabel('Situps')  # X-axis label
-        plt.ylabel('Jumps')  # Y-axis label
-        plt.title('Linear Regression')  # Plot title
+        plt.xlabel(selected_columns[i])  # X-axis label
+        plt.ylabel(selected_columns[next_index])  # Y-axis label
+        plt.title(f'Linear Regression Betewen {selected_columns[i]} & {selected_columns[next_index]}')  # Plot title
         plt.legend()  # Add legend
         plt.show()  # Display the plot
 
