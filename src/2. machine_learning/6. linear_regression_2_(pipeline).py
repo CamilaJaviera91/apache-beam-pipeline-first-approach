@@ -57,7 +57,6 @@ def linear_regression():
         plt.legend()  # Show legend
         plt.show()  # Display the plot
 
-
 if __name__ == '__main__':
     # Load the dataset from a CSV file
     df = pd.read_csv('./src/download/chins_filtered_7.csv')
