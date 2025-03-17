@@ -446,7 +446,7 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 
 ### 👨‍💻 Explanation of the Code:
 
-- In this code, we will perform two analyses using three variables: 'Chins', 'Jumps', and 'Situps':
+- In this code, we will perform two analyses using three variables: **'Chins'**, **'Jumps'**, and **'Situps'**:
 
 1. Hypothesis testing
 2. Clustering
