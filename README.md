@@ -448,8 +448,8 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 
 - In this code, we will perform two analyses using three variables: **'Chins'**, **'Jumps'**, and **'Situps'**:
 
-1. Hypothesis testing
-2. Clustering
+1. **Hypothesis testing**
+2. **Clustering**
 
 - More may be added in the future. For now, this analysis is conducted to test how it works.
 
