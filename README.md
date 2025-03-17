@@ -600,7 +600,7 @@ Accuracy: 0.00
 
 - This code will determine the values of MSE, and with that, we can create the linear regression model.
 
-- In this code we will use 'pipeline'
+- In this code we will use **'pipeline'**
 
 ### ✅ Example Output:
 
