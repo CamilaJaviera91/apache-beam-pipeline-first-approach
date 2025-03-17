@@ -432,9 +432,9 @@ Chins,Situps,Jumps,Chins Range,Situps Range,Jumps Range,User,Chins_vs_Avg,Situps
 
 - Three analyses (so far) will be conducted:
 
-    1. Dataset report.
-    2. Histograms.
-    3. Density analysis.
+    1. **Dataset report**. 
+    2. **Histograms**. 
+    3. **Density analysis**. 
 
 - Finally, the reports will be downloaded as a PDF file.
 
