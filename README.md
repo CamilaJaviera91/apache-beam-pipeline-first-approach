@@ -524,7 +524,7 @@ MAE for Chins Range and Situps Range: 46.8652
 
 ### 👨‍💻 Explanation of the Code:
 
-- This code will determine the values of MSE, and with that, we can create the linear regression model.
+- This code will determine the values of **MSE**, and with that, we can create the **linear regression** model.
 
 ### ✅ Example Output:
 
