@@ -18,10 +18,10 @@ def decision_tree():
         next_index = (i + 1) % len(selected_columns)
 
         # Define features (X) and target variable (y)
-        X = df[[selected_columns[i]]]
-        y = df[selected_columns[next_index]]
+        X = np.array(df[[selected_columns[i]]])  # Select the current column as the independent variable
+        y = np.array(df[selected_columns[next_index]]).ravel()  # Select the next column as the dependent variable
 
-        # Split the data
+        # Split the data into training and testing sets
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
         # Create a pipeline for preprocessing and modeling
@@ -30,15 +30,18 @@ def decision_tree():
             ('model', DecisionTreeRegressor(max_depth=3, random_state=42))  # Decision Tree for regression
         ])
 
-        # Train the model
+         # Train the model using the training data
         pipeline.fit(X_train, y_train)
 
-        # Make predictions
+        # Make predictions using the test data
         y_pred = pipeline.predict(X_test)
 
-        # Calculate MSE
+        # Calculate Mean Squared Error (MSE)
         mse = mean_squared_error(y_test, y_pred)
-        print(f"MSE between {selected_columns[i]} and {selected_columns[next_index]}: {mse:.2f}")
+        
+        # Display the results
+        print(f"\nDecision Tree between '{selected_columns[i]}' (X) and '{selected_columns[next_index]}' (y)")
+        print(f"MSE: {mse:.4f}")
 
         # Plot results
         plt.figure(figsize=(12, 8))
