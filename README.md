@@ -623,3 +623,30 @@ MSE: 2265.5290
 ```
 
 ---
+
+## 💻 7. decision_tree_Regressor_(pipeline).py
+
+### 👨‍💻 Explanation of the Code:
+
+- This code will determine the values of **MSE**, and with that, we can create the **Decision Tree Regressor** model.
+
+- In this code we will use **'pipeline'**
+
+### ✅ Example Output:
+
+#### decision_tree
+
+```
+Decision Tree between 'Situps Range' (X) and 'Jumps Range' (y)
+MSE: 304.9267
+```
+
+```
+Decision Tree between 'Jumps Range' (X) and 'Chins Range' (y)
+MSE: 20.8333
+```
+
+```
+Decision Tree between 'Chins Range' (X) and 'Situps Range' (y)
+MSE: 2517.3611
+```
